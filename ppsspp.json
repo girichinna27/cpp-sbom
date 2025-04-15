@@ -1,0 +1,1172 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.3",
+  "serialNumber": "urn:uuid:9ab46d6e-d860-4994-b2c1-af11b074b6ae",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-04-15T08:42:12Z",
+    "tools": [
+      {
+        "vendor": "Tern Tools",
+        "name": "Tern",
+        "version": "2.12.1"
+      }
+    ],
+    "component": {
+      "type": "container",
+      "scope": "required",
+      "name": "docker.io/hanumeshc/ppsspp",
+      "version": "sha256:bad80615345b1f8b9dbf7dde5daa3789693bab7d45321b170df77c749ea373ba",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bad80615345b1f8b9dbf7dde5daa3789693bab7d45321b170df77c749ea373ba"
+        }
+      ],
+      "properties": [
+        {
+          "name": "tern:repotag",
+          "value": "docker.io/hanumeshc/ppsspp:latest"
+        },
+        {
+          "name": "tern:os_guess",
+          "value": "Alpine Linux v3.21"
+        }
+      ],
+      "purl": "pkg:docker/docker.io/hanumeshc/ppsspp@sha256:bad80615345b1f8b9dbf7dde5daa3789693bab7d45321b170df77c749ea373ba"
+    }
+  },
+  "components": [
+    {
+      "name": "alpine-baselayout",
+      "version": "3.6.8-r1",
+      "type": "application",
+      "purl": "pkg:alpine/alpine-baselayout/3.6.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "alpine-baselayout-data",
+      "version": "3.6.8-r1",
+      "type": "application",
+      "purl": "pkg:alpine/alpine-baselayout-data/3.6.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "alpine-keys",
+      "version": "2.5-r0",
+      "type": "application",
+      "purl": "pkg:alpine/alpine-keys/2.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "alpine-release",
+      "version": "3.21.3-r0",
+      "type": "application",
+      "purl": "pkg:alpine/alpine-release/3.21.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "apk-tools",
+      "version": "2.14.6-r3",
+      "type": "application",
+      "purl": "pkg:alpine/apk-tools/2.14.6-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "busybox",
+      "version": "1.37.0-r12",
+      "type": "application",
+      "purl": "pkg:alpine/busybox/1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "busybox-binsh",
+      "version": "1.37.0-r12",
+      "type": "application",
+      "purl": "pkg:alpine/busybox-binsh/1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ca-certificates-bundle",
+      "version": "20241121-r1",
+      "type": "application",
+      "purl": "pkg:alpine/ca-certificates-bundle/20241121-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 AND MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libcrypto3",
+      "version": "3.3.3-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libcrypto3/3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libssl3",
+      "version": "3.3.3-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libssl3/3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "musl",
+      "version": "1.2.5-r9",
+      "type": "application",
+      "purl": "pkg:alpine/musl/1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "musl-utils",
+      "version": "1.2.5-r9",
+      "type": "application",
+      "purl": "pkg:alpine/musl-utils/1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND BSD-2-Clause AND GPL-2.0-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "scanelf",
+      "version": "1.3.8-r1",
+      "type": "application",
+      "purl": "pkg:alpine/scanelf/1.3.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ssl_client",
+      "version": "1.37.0-r12",
+      "type": "application",
+      "purl": "pkg:alpine/ssl_client/1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1-r2",
+      "type": "application",
+      "purl": "pkg:alpine/zlib/1.3.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ]
+    },
+    {
+      "name": "clang19-headers",
+      "version": "19.1.4-r0",
+      "type": "application",
+      "purl": "pkg:alpine/clang19-headers/19.1.4-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0 WITH LLVM-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "clang19-libs",
+      "version": "19.1.4-r0",
+      "type": "application",
+      "purl": "pkg:alpine/clang19-libs/19.1.4-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0 WITH LLVM-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "gdbm",
+      "version": "1.24-r0",
+      "type": "application",
+      "purl": "pkg:alpine/gdbm/1.24-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "glu",
+      "version": "9.0.3-r3",
+      "type": "application",
+      "purl": "pkg:alpine/glu/9.0.3-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "SGI-B-1.1 AND SGI-B-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "glu-dev",
+      "version": "9.0.3-r3",
+      "type": "application",
+      "purl": "pkg:alpine/glu-dev/9.0.3-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "SGI-B-1.1 AND SGI-B-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "hwdata-pci",
+      "version": "0.393-r0",
+      "type": "application",
+      "purl": "pkg:alpine/hwdata-pci/0.393-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later OR XFree86-1.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libbsd",
+      "version": "0.12.2-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libbsd/0.12.2-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libbz2",
+      "version": "1.0.8-r6",
+      "type": "application",
+      "purl": "pkg:alpine/libbz2/1.0.8-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "bzip2-1.0.6"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libclc",
+      "version": "19.1.4-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libclc/19.1.4-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0 WITH LLVM-exception"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libdrm",
+      "version": "2.4.123-r1",
+      "type": "application",
+      "purl": "pkg:alpine/libdrm/2.4.123-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libdrm-dev",
+      "version": "2.4.123-r1",
+      "type": "application",
+      "purl": "pkg:alpine/libdrm-dev/2.4.123-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libelf",
+      "version": "0.191-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libelf/0.191-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libexpat",
+      "version": "2.7.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libexpat/2.7.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libffi",
+      "version": "3.4.7-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libffi/3.4.7-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libgcc",
+      "version": "14.2.0-r4",
+      "type": "application",
+      "purl": "pkg:alpine/libgcc/14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libmd",
+      "version": "1.1.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libmd/1.1.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libncursesw",
+      "version": "6.5_p20241006-r3",
+      "type": "application",
+      "purl": "pkg:alpine/libncursesw/6.5_p20241006-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libpanelw",
+      "version": "6.5_p20241006-r3",
+      "type": "application",
+      "purl": "pkg:alpine/libpanelw/6.5_p20241006-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libpciaccess",
+      "version": "0.18.1-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libpciaccess/0.18.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libpciaccess-dev",
+      "version": "0.18.1-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libpciaccess-dev/0.18.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libstdc++",
+      "version": "14.2.0-r4",
+      "type": "application",
+      "purl": "pkg:alpine/libstdc%2B%2B/14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libx11",
+      "version": "1.8.10-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libx11/1.8.10-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libx11-dev",
+      "version": "1.8.10-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libx11-dev/1.8.10-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxau",
+      "version": "1.0.11-r4",
+      "type": "application",
+      "purl": "pkg:alpine/libxau/1.0.11-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxau-dev",
+      "version": "1.0.11-r4",
+      "type": "application",
+      "purl": "pkg:alpine/libxau-dev/1.0.11-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxcb",
+      "version": "1.16.1-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libxcb/1.16.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxcb-dev",
+      "version": "1.16.1-r0",
+      "type": "application",
+      "purl": "pkg:alpine/libxcb-dev/1.16.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxdamage",
+      "version": "1.1.6-r5",
+      "type": "application",
+      "purl": "pkg:alpine/libxdamage/1.1.6-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxdamage-dev",
+      "version": "1.1.6-r5",
+      "type": "application",
+      "purl": "pkg:alpine/libxdamage-dev/1.1.6-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxdmcp",
+      "version": "1.1.5-r1",
+      "type": "application",
+      "purl": "pkg:alpine/libxdmcp/1.1.5-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxdmcp-dev",
+      "version": "1.1.5-r1",
+      "type": "application",
+      "purl": "pkg:alpine/libxdmcp-dev/1.1.5-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxext",
+      "version": "1.3.6-r2",
+      "type": "application",
+      "purl": "pkg:alpine/libxext/1.3.6-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxext-dev",
+      "version": "1.3.6-r2",
+      "type": "application",
+      "purl": "pkg:alpine/libxext-dev/1.3.6-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxfixes",
+      "version": "6.0.1-r4",
+      "type": "application",
+      "purl": "pkg:alpine/libxfixes/6.0.1-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxfixes-dev",
+      "version": "6.0.1-r4",
+      "type": "application",
+      "purl": "pkg:alpine/libxfixes-dev/6.0.1-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxml2",
+      "version": "2.13.4-r5",
+      "type": "application",
+      "purl": "pkg:alpine/libxml2/2.13.4-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxshmfence",
+      "version": "1.3.2-r6",
+      "type": "application",
+      "purl": "pkg:alpine/libxshmfence/1.3.2-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxshmfence-dev",
+      "version": "1.3.2-r6",
+      "type": "application",
+      "purl": "pkg:alpine/libxshmfence-dev/1.3.2-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxxf86vm",
+      "version": "1.1.5-r6",
+      "type": "application",
+      "purl": "pkg:alpine/libxxf86vm/1.1.5-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "libxxf86vm-dev",
+      "version": "1.1.5-r6",
+      "type": "application",
+      "purl": "pkg:alpine/libxxf86vm-dev/1.1.5-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "linux-headers",
+      "version": "6.6-r1",
+      "type": "application",
+      "purl": "pkg:alpine/linux-headers/6.6-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ]
+    },
+    {
+      "name": "llvm19-libs",
+      "version": "19.1.4-r1",
+      "type": "application",
+      "purl": "pkg:alpine/llvm19-libs/19.1.4-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-dev",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-dev/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-egl",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-egl/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-gbm",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-gbm/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-gl",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-gl/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-glapi",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-glapi/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-gles",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-gles/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-osmesa",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-osmesa/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-rusticl",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-rusticl/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mesa-xatracker",
+      "version": "24.2.8-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mesa-xatracker/24.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND SGI-B-2.0 AND BSL-1.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mpdecimal",
+      "version": "4.0.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/mpdecimal/4.0.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ncurses-terminfo-base",
+      "version": "6.5_p20241006-r3",
+      "type": "application",
+      "purl": "pkg:alpine/ncurses-terminfo-base/6.5_p20241006-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pkgconf",
+      "version": "2.3.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/pkgconf/2.3.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pyc",
+      "version": "3.12.10-r0",
+      "type": "application",
+      "purl": "pkg:alpine/pyc/3.12.10-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "python3",
+      "version": "3.12.10-r0",
+      "type": "application",
+      "purl": "pkg:alpine/python3/3.12.10-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "python3-pyc",
+      "version": "3.12.10-r0",
+      "type": "application",
+      "purl": "pkg:alpine/python3-pyc/3.12.10-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "python3-pycache-pyc0",
+      "version": "3.12.10-r0",
+      "type": "application",
+      "purl": "pkg:alpine/python3-pycache-pyc0/3.12.10-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "PSF-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "readline",
+      "version": "8.2.13-r0",
+      "type": "application",
+      "purl": "pkg:alpine/readline/8.2.13-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "sdl2",
+      "version": "2.30.9-r0",
+      "type": "application",
+      "purl": "pkg:alpine/sdl2/2.30.9-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spirv-llvm-translator-libs",
+      "version": "19.1.2-r0",
+      "type": "application",
+      "purl": "pkg:alpine/spirv-llvm-translator-libs/19.1.2-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "NCSA"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spirv-tools",
+      "version": "1.3.296.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/spirv-tools/1.3.296.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "sqlite-libs",
+      "version": "3.48.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/sqlite-libs/3.48.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "blessing"
+          }
+        }
+      ]
+    },
+    {
+      "name": "wayland-libs-client",
+      "version": "1.23.1-r0",
+      "type": "application",
+      "purl": "pkg:alpine/wayland-libs-client/1.23.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "wayland-libs-server",
+      "version": "1.23.1-r0",
+      "type": "application",
+      "purl": "pkg:alpine/wayland-libs-server/1.23.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "xcb-proto",
+      "version": "1.17.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/xcb-proto/1.17.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "xcb-proto-pyc",
+      "version": "1.17.0-r0",
+      "type": "application",
+      "purl": "pkg:alpine/xcb-proto-pyc/1.17.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "xorgproto",
+      "version": "2024.1-r0",
+      "type": "application",
+      "purl": "pkg:alpine/xorgproto/2024.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause AND MIT AND X11"
+          }
+        }
+      ]
+    },
+    {
+      "name": "xtrans",
+      "version": "1.5.2-r0",
+      "type": "application",
+      "purl": "pkg:alpine/xtrans/1.5.2-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "xz-libs",
+      "version": "5.6.3-r1",
+      "type": "application",
+      "purl": "pkg:alpine/xz-libs/5.6.3-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "zstd-libs",
+      "version": "1.5.6-r2",
+      "type": "application",
+      "purl": "pkg:alpine/zstd-libs/1.5.6-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause OR GPL-2.0-or-later"
+          }
+        }
+      ]
+    }
+  ]
+}
