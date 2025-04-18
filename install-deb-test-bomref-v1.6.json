@@ -1,0 +1,2885 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:260ac188-21fb-427a-9333-96f25b488668",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-04-15T10:55:20Z",
+    "tools": [
+      {
+        "vendor": "Tern Tools",
+        "name": "Tern",
+        "version": "2.12.1"
+      }
+    ],
+    "component": {
+      "type": "container",
+      "name": "clickhouse/install-deb-test",
+      "version": "sha256:0e5843ab0e865e8e26866671ee1e5c643ffd45462bf2a81f2b88cb70a62c094d",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0e5843ab0e865e8e26866671ee1e5c643ffd45462bf2a81f2b88cb70a62c094d"
+        }
+      ],
+      "purl": "pkg:docker/clickhouse/install-deb-test@sha256:0e5843ab0e865e8e26866671ee1e5c643ffd45462bf2a81f2b88cb70a62c094d",
+      "properties": [
+        {
+          "name": "tern:repotag",
+          "value": "clickhouse/install-deb-test:latest"
+        },
+        {
+          "name": "tern:os_guess",
+          "value": "Ubuntu 22.04.5 LTS"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "adduser",
+      "version": "3.118ubuntu5",
+      "purl": "pkg:deb/ubuntu/adduser@3.118ubuntu5",
+      "bom-ref": "a8ed73e1-3ff4-4e4e-8098-e8f1946e410e"
+    },
+    {
+      "type": "library",
+      "name": "apt",
+      "version": "2.4.13",
+      "purl": "pkg:deb/ubuntu/apt@2.4.13",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPLv2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "50df8d4e-7d41-4630-8e4e-3713b372966c"
+    },
+    {
+      "type": "library",
+      "name": "base-files",
+      "version": "12ubuntu4.7",
+      "purl": "pkg:deb/ubuntu/base-files@12ubuntu4.7",
+      "bom-ref": "b59efee3-6e04-499c-a9b2-1b1e07e96ccd"
+    },
+    {
+      "type": "library",
+      "name": "base-passwd",
+      "version": "3.5.52build1",
+      "purl": "pkg:deb/ubuntu/base-passwd@3.5.52build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "07b3a0fd-dad2-49c8-924f-9a8cd243225e"
+    },
+    {
+      "type": "library",
+      "name": "bash",
+      "version": "5.1-6ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/bash@5.1-6ubuntu1.1",
+      "bom-ref": "09a8d697-4369-430c-9833-03a249d0273b"
+    },
+    {
+      "type": "library",
+      "name": "bsdutils",
+      "version": "1:2.37.2-4ubuntu3.4",
+      "purl": "pkg:deb/ubuntu/bsdutils@1:2.37.2-4ubuntu3.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "3347a6e0-799e-4e05-928a-4290f16a71de"
+    },
+    {
+      "type": "library",
+      "name": "coreutils",
+      "version": "8.32-4.1ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1.2",
+      "bom-ref": "ff2fb5c9-e9e6-4da6-8d18-38ee23a98675"
+    },
+    {
+      "type": "library",
+      "name": "dash",
+      "version": "0.5.11+git20210903+057cd650a4ed-3build1",
+      "purl": "pkg:deb/ubuntu/dash@0.5.11%2Bgit20210903%2B057cd650a4ed-3build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "FSFUL"
+            }
+          },
+          {
+            "license": {
+              "id": "FSFULLR"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+ or BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "965344be-0017-4a32-950c-f034c532fde8"
+    },
+    {
+      "type": "library",
+      "name": "debconf",
+      "version": "1.5.79ubuntu1",
+      "purl": "pkg:deb/ubuntu/debconf@1.5.79ubuntu1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          }
+        ]
+      },
+      "bom-ref": "195cf609-c797-4762-ba6e-ea66427c9655"
+    },
+    {
+      "type": "library",
+      "name": "debianutils",
+      "version": "5.5-1ubuntu2",
+      "purl": "pkg:deb/ubuntu/debianutils@5.5-1ubuntu2",
+      "bom-ref": "01717edd-35a4-4a40-b92d-8b2a5ef4d5ac"
+    },
+    {
+      "type": "library",
+      "name": "diffutils",
+      "version": "1:3.8-0ubuntu2",
+      "purl": "pkg:deb/ubuntu/diffutils@1:3.8-0ubuntu2",
+      "bom-ref": "7f3f9ba1-f10a-4347-8bdc-8d928f5a1c00"
+    },
+    {
+      "type": "library",
+      "name": "dpkg",
+      "version": "1.21.1ubuntu2.3",
+      "purl": "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.3",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain-md5"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain-s-s-d"
+            }
+          }
+        ]
+      },
+      "bom-ref": "496e17e9-e9d6-4bd0-83dd-3b0378e98a2b"
+    },
+    {
+      "type": "library",
+      "name": "e2fsprogs",
+      "version": "1.46.5-2ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.2",
+      "bom-ref": "8e07d2c5-7ed4-41a0-a0d0-5277a7dfb2ab"
+    },
+    {
+      "type": "library",
+      "name": "findutils",
+      "version": "4.8.0-1ubuntu3",
+      "purl": "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3",
+      "bom-ref": "ee9d4eb2-c439-4a7c-b80b-534d1b4cf21f"
+    },
+    {
+      "type": "library",
+      "name": "gcc-12-base",
+      "version": "12.3.0-1ubuntu1~22.04",
+      "purl": "pkg:deb/ubuntu/gcc-12-base@12.3.0-1ubuntu1~22.04",
+      "bom-ref": "2d815503-4020-4614-b20a-eb948f446574"
+    },
+    {
+      "type": "library",
+      "name": "gpgv",
+      "version": "2.2.27-3ubuntu2.1",
+      "purl": "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "CC0-1.0"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+ or BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "RFC-Reference"
+            }
+          },
+          {
+            "license": {
+              "id": "TinySCHEME"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive"
+            }
+          }
+        ]
+      },
+      "bom-ref": "76ae006c-e21b-4fca-a456-f6c034457876"
+    },
+    {
+      "type": "library",
+      "name": "grep",
+      "version": "3.7-1build1",
+      "purl": "pkg:deb/ubuntu/grep@3.7-1build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "04be8fe7-a772-44c6-9a8b-1c7a309360f4"
+    },
+    {
+      "type": "library",
+      "name": "gzip",
+      "version": "1.10-4ubuntu4.1",
+      "purl": "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "FSF-manpages"
+            }
+          },
+          {
+            "license": {
+              "id": "GFDL-1.3+-no-invariant"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "682df115-7511-46dc-8dbc-98b1f902ccee"
+    },
+    {
+      "type": "library",
+      "name": "hostname",
+      "version": "3.23ubuntu2",
+      "purl": "pkg:deb/ubuntu/hostname@3.23ubuntu2",
+      "bom-ref": "0858ff82-423e-4b00-8d31-616ab14c683a"
+    },
+    {
+      "type": "library",
+      "name": "init-system-helpers",
+      "version": "1.62",
+      "purl": "pkg:deb/ubuntu/init-system-helpers@1.62",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "0ea82f2c-eba2-40b2-ac52-fdadcd01d38e"
+    },
+    {
+      "type": "library",
+      "name": "libacl1",
+      "version": "2.3.1-1",
+      "purl": "pkg:deb/ubuntu/libacl1@2.3.1-1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "e0cdb4ea-1db2-4c62-b824-a8235e356acd"
+    },
+    {
+      "type": "library",
+      "name": "libapt-pkg6.0",
+      "version": "2.4.13",
+      "purl": "pkg:deb/ubuntu/libapt-pkg6.0@2.4.13",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPLv2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "43bd0707-8f18-4653-94b7-2b31f351aeab"
+    },
+    {
+      "type": "library",
+      "name": "libattr1",
+      "version": "1:2.5.1-1build1",
+      "purl": "pkg:deb/ubuntu/libattr1@1:2.5.1-1build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "e8489452-34ed-49c5-93fe-36cecbb1e514"
+    },
+    {
+      "type": "library",
+      "name": "libaudit-common",
+      "version": "1:3.0.7-1build1",
+      "purl": "pkg:deb/ubuntu/libaudit-common@1:3.0.7-1build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1"
+            }
+          }
+        ]
+      },
+      "bom-ref": "2f5d0944-54fe-4d33-ba2d-0c5b37b32fd1"
+    },
+    {
+      "type": "library",
+      "name": "libaudit1",
+      "version": "1:3.0.7-1build1",
+      "purl": "pkg:deb/ubuntu/libaudit1@1:3.0.7-1build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1"
+            }
+          }
+        ]
+      },
+      "bom-ref": "7d26185c-d1fc-4a88-9857-4cd4506231b4"
+    },
+    {
+      "type": "library",
+      "name": "libblkid1",
+      "version": "2.37.2-4ubuntu3.4",
+      "purl": "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "7a0eca98-f6b3-4e9d-803a-dcf9fed42093"
+    },
+    {
+      "type": "library",
+      "name": "libbz2-1.0",
+      "version": "1.0.8-5build1",
+      "purl": "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-variant"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          }
+        ]
+      },
+      "bom-ref": "5939b31d-7bbc-4be2-90f7-f2cd33469705"
+    },
+    {
+      "type": "library",
+      "name": "libc-bin",
+      "version": "2.35-0ubuntu3.8",
+      "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.8",
+      "bom-ref": "0c451020-2236-4b6d-8013-841bb71abd4b"
+    },
+    {
+      "type": "library",
+      "name": "libc6",
+      "version": "2.35-0ubuntu3.8",
+      "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.8",
+      "bom-ref": "dceef4e1-d203-4968-8c80-9e713eff97d2"
+    },
+    {
+      "type": "library",
+      "name": "libcap-ng0",
+      "version": "0.7.9-2.2build3",
+      "purl": "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.2build3",
+      "bom-ref": "ac7172e8-a489-4b67-8a64-fbb14d45188d"
+    },
+    {
+      "type": "library",
+      "name": "libcap2",
+      "version": "1:2.44-1ubuntu0.22.04.1",
+      "purl": "pkg:deb/ubuntu/libcap2@1:2.44-1ubuntu0.22.04.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause or GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause or GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "eecee1c2-b1ec-49f9-991f-fe874d78a815"
+    },
+    {
+      "type": "library",
+      "name": "libcom-err2",
+      "version": "1.46.5-2ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1.2",
+      "bom-ref": "6745a53f-1c12-48de-9a27-984c9414c8a1"
+    },
+    {
+      "type": "library",
+      "name": "libcrypt1",
+      "version": "1:4.4.27-1",
+      "purl": "pkg:deb/ubuntu/libcrypt1@1:4.4.27-1",
+      "bom-ref": "161e23a3-0b39-44bc-bd53-244dadb92bd9"
+    },
+    {
+      "type": "library",
+      "name": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.8ubuntu3",
+      "purl": "pkg:deb/ubuntu/libdb5.3@5.3.28%2Bdfsg1-0.8ubuntu3",
+      "bom-ref": "39c52ff3-b040-4885-82e6-0c8e61260371"
+    },
+    {
+      "type": "library",
+      "name": "libdebconfclient0",
+      "version": "0.261ubuntu1",
+      "purl": "pkg:deb/ubuntu/libdebconfclient0@0.261ubuntu1",
+      "bom-ref": "943a55ec-86aa-4b2d-80c2-1d49ca703b10"
+    },
+    {
+      "type": "library",
+      "name": "libext2fs2",
+      "version": "1.46.5-2ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.2",
+      "bom-ref": "781e0717-8f6f-4570-88b7-0a6c8a9d06f4"
+    },
+    {
+      "type": "library",
+      "name": "libffi8",
+      "version": "3.4.2-4",
+      "purl": "pkg:deb/ubuntu/libffi8@3.4.2-4",
+      "bom-ref": "53ad5109-75b9-4080-b605-34dc5bc5285a"
+    },
+    {
+      "type": "library",
+      "name": "libgcc-s1",
+      "version": "12.3.0-1ubuntu1~22.04",
+      "purl": "pkg:deb/ubuntu/libgcc-s1@12.3.0-1ubuntu1~22.04",
+      "bom-ref": "4e4150ee-fc74-4e46-adad-2739e44e106c"
+    },
+    {
+      "type": "library",
+      "name": "libgcrypt20",
+      "version": "1.9.4-3ubuntu3",
+      "purl": "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3",
+      "bom-ref": "cf8ad5d8-d9f6-46da-8479-0374049a5bbd"
+    },
+    {
+      "type": "library",
+      "name": "libgmp10",
+      "version": "2:6.2.1+dfsg-3ubuntu1",
+      "purl": "pkg:deb/ubuntu/libgmp10@2:6.2.1%2Bdfsg-3ubuntu1",
+      "bom-ref": "61e4a240-aebd-4b1a-9a7c-772fd334ae7c"
+    },
+    {
+      "type": "library",
+      "name": "libgnutls30",
+      "version": "3.7.3-4ubuntu1.5",
+      "purl": "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.5",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GPLv3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPLv2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPLv3+_or_GPLv2+"
+            }
+          },
+          {
+            "license": {
+              "id": "Public domain."
+            }
+          },
+          {
+            "license": {
+              "id": "based on Russian standard GOST 28147-89"
+            }
+          }
+        ]
+      },
+      "bom-ref": "25bc6e59-2302-47ed-b7b6-76b7be2d23f1"
+    },
+    {
+      "type": "library",
+      "name": "libgpg-error0",
+      "version": "1.43-3",
+      "purl": "pkg:deb/ubuntu/libgpg-error0@1.43-3",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+ or BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "g10-permissive"
+            }
+          }
+        ]
+      },
+      "bom-ref": "c92e0130-8f4c-4ac6-ae71-2dc49f346c39"
+    },
+    {
+      "type": "library",
+      "name": "libgssapi-krb5-2",
+      "version": "1.19.2-2ubuntu0.4",
+      "purl": "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2ubuntu0.4",
+      "bom-ref": "27829e6f-5768-4ab6-b1f8-3c6da802a4a9"
+    },
+    {
+      "type": "library",
+      "name": "libhogweed6",
+      "version": "3.7.3-1build2",
+      "purl": "pkg:deb/ubuntu/libhogweed6@3.7.3-1build2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GAP"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+ with Autoconf exception"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+ or GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "066d286c-6177-4fb3-9f31-d5a691525a82"
+    },
+    {
+      "type": "library",
+      "name": "libidn2-0",
+      "version": "2.3.2-2build1",
+      "purl": "pkg:deb/ubuntu/libidn2-0@2.3.2-2build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+ or GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "Unicode"
+            }
+          }
+        ]
+      },
+      "bom-ref": "ec3c7106-269b-4656-9737-dcba7febfbe0"
+    },
+    {
+      "type": "library",
+      "name": "libk5crypto3",
+      "version": "1.19.2-2ubuntu0.4",
+      "purl": "pkg:deb/ubuntu/libk5crypto3@1.19.2-2ubuntu0.4",
+      "bom-ref": "3bdafd8c-8eaf-49f1-b95d-4ff1e1b7daa4"
+    },
+    {
+      "type": "library",
+      "name": "libkeyutils1",
+      "version": "1.6.1-2ubuntu3",
+      "purl": "pkg:deb/ubuntu/libkeyutils1@1.6.1-2ubuntu3",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "dfa6dbf1-9d40-476c-a65d-381e542b6096"
+    },
+    {
+      "type": "library",
+      "name": "libkrb5-3",
+      "version": "1.19.2-2ubuntu0.4",
+      "purl": "pkg:deb/ubuntu/libkrb5-3@1.19.2-2ubuntu0.4",
+      "bom-ref": "9672a6fe-f4e4-4a1b-b877-36517165ed83"
+    },
+    {
+      "type": "library",
+      "name": "libkrb5support0",
+      "version": "1.19.2-2ubuntu0.4",
+      "purl": "pkg:deb/ubuntu/libkrb5support0@1.19.2-2ubuntu0.4",
+      "bom-ref": "05fb15ed-4bca-470c-95ac-0ee990815e35"
+    },
+    {
+      "type": "library",
+      "name": "liblz4-1",
+      "version": "1.9.3-2build2",
+      "purl": "pkg:deb/ubuntu/liblz4-1@1.9.3-2build2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "749d7065-ea24-40da-9522-71d7646a002e"
+    },
+    {
+      "type": "library",
+      "name": "liblzma5",
+      "version": "5.2.5-2ubuntu1",
+      "purl": "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Autoconf"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "PD"
+            }
+          },
+          {
+            "license": {
+              "id": "PD-debian"
+            }
+          },
+          {
+            "license": {
+              "id": "config-h"
+            }
+          },
+          {
+            "license": {
+              "id": "noderivs"
+            }
+          },
+          {
+            "license": {
+              "id": "none"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-fsf"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-nowarranty"
+            }
+          },
+          {
+            "license": {
+              "id": "probably-PD"
+            }
+          }
+        ]
+      },
+      "bom-ref": "5167dacb-8003-4b05-bbf3-ea941498ce47"
+    },
+    {
+      "type": "library",
+      "name": "libmount1",
+      "version": "2.37.2-4ubuntu3.4",
+      "purl": "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "e9059f67-f5f7-4e9e-93c6-a6cecc61ea4a"
+    },
+    {
+      "type": "library",
+      "name": "libncurses6",
+      "version": "6.3-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libncurses6@6.3-2ubuntu0.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT/X11"
+            }
+          },
+          {
+            "license": {
+              "id": "X11"
+            }
+          }
+        ]
+      },
+      "bom-ref": "89dff078-1571-45e5-9479-700f7f71573c"
+    },
+    {
+      "type": "library",
+      "name": "libncursesw6",
+      "version": "6.3-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libncursesw6@6.3-2ubuntu0.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT/X11"
+            }
+          },
+          {
+            "license": {
+              "id": "X11"
+            }
+          }
+        ]
+      },
+      "bom-ref": "2b5d0c76-919d-40a5-aec2-5b7260c4569a"
+    },
+    {
+      "type": "library",
+      "name": "libnettle8",
+      "version": "3.7.3-1build2",
+      "purl": "pkg:deb/ubuntu/libnettle8@3.7.3-1build2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GAP"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+ with Autoconf exception"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+ or GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "8cbb4d7f-d5ef-43fa-8953-72cebe743c81"
+    },
+    {
+      "type": "library",
+      "name": "libnsl2",
+      "version": "1.3.0-2build2",
+      "purl": "pkg:deb/ubuntu/libnsl2@1.3.0-2build2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+-autoconf-exception"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+-libtool-exception"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+-autoconf-exception"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-autoconf-m4"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-autoconf-m4-no-warranty"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-configure"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-fsf"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-makefile-in"
+            }
+          }
+        ]
+      },
+      "bom-ref": "28a355c4-1d81-4247-be21-36060befc663"
+    },
+    {
+      "type": "library",
+      "name": "libp11-kit0",
+      "version": "0.24.0-6build1",
+      "purl": "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "ISC"
+            }
+          },
+          {
+            "license": {
+              "id": "ISC+IBM"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "permissive-like-automake-output"
+            }
+          },
+          {
+            "license": {
+              "id": "same-as-rest-of-p11kit"
+            }
+          }
+        ]
+      },
+      "bom-ref": "9862b946-97a9-427c-bf09-9ac720ef461b"
+    },
+    {
+      "type": "library",
+      "name": "libpam-modules",
+      "version": "1.4.0-11ubuntu2.5",
+      "purl": "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2.5",
+      "bom-ref": "16b2534d-863a-4748-bd46-95c0d9d736ac"
+    },
+    {
+      "type": "library",
+      "name": "libpam-modules-bin",
+      "version": "1.4.0-11ubuntu2.5",
+      "purl": "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2.5",
+      "bom-ref": "dde8b2db-8c2d-4408-a9ce-de44c5f46fc8"
+    },
+    {
+      "type": "library",
+      "name": "libpam-runtime",
+      "version": "1.4.0-11ubuntu2.5",
+      "purl": "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2.5",
+      "bom-ref": "342d8a9b-d480-4396-b1b9-01a7942e9ff1"
+    },
+    {
+      "type": "library",
+      "name": "libpam0g",
+      "version": "1.4.0-11ubuntu2.5",
+      "purl": "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2.5",
+      "bom-ref": "1cc58c21-2a84-417a-8b77-cd879ae56036"
+    },
+    {
+      "type": "library",
+      "name": "libpcre2-8-0",
+      "version": "10.39-3ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1",
+      "bom-ref": "0491745b-5dfe-49ea-ba43-74aaaaa6716a"
+    },
+    {
+      "type": "library",
+      "name": "libpcre3",
+      "version": "2:8.39-13ubuntu0.22.04.1",
+      "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1",
+      "bom-ref": "0639363e-0095-490f-9036-8e9bdb451722"
+    },
+    {
+      "type": "library",
+      "name": "libprocps8",
+      "version": "2:3.3.17-6ubuntu2.1",
+      "purl": "pkg:deb/ubuntu/libprocps8@2:3.3.17-6ubuntu2.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2.0+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.0+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "c067a3cf-38e4-4e60-b419-619e29e4e488"
+    },
+    {
+      "type": "library",
+      "name": "libseccomp2",
+      "version": "2.5.3-2ubuntu2",
+      "purl": "pkg:deb/ubuntu/libseccomp2@2.5.3-2ubuntu2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "LGPL-2.1"
+            }
+          }
+        ]
+      },
+      "bom-ref": "9ccebae9-90ff-4697-a12a-dadb26d11c67"
+    },
+    {
+      "type": "library",
+      "name": "libselinux1",
+      "version": "3.3-1build2",
+      "purl": "pkg:deb/ubuntu/libselinux1@3.3-1build2",
+      "bom-ref": "c93365f6-4ddf-4146-bd9f-3147ea983f84"
+    },
+    {
+      "type": "library",
+      "name": "libsemanage-common",
+      "version": "3.3-1build2",
+      "purl": "pkg:deb/ubuntu/libsemanage-common@3.3-1build2",
+      "bom-ref": "709d8077-2917-45b0-9238-81121ccf6929"
+    },
+    {
+      "type": "library",
+      "name": "libsemanage2",
+      "version": "3.3-1build2",
+      "purl": "pkg:deb/ubuntu/libsemanage2@3.3-1build2",
+      "bom-ref": "16cdd3c5-ea74-4d00-a7e6-3cd3f26db14e"
+    },
+    {
+      "type": "library",
+      "name": "libsepol2",
+      "version": "3.3-1build1",
+      "purl": "pkg:deb/ubuntu/libsepol2@3.3-1build1",
+      "bom-ref": "2a38eef6-3982-46ed-8a6a-fd7f0e81f2ba"
+    },
+    {
+      "type": "library",
+      "name": "libsmartcols1",
+      "version": "2.37.2-4ubuntu3.4",
+      "purl": "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "174dec03-1534-4628-bcbf-37674d559335"
+    },
+    {
+      "type": "library",
+      "name": "libss2",
+      "version": "1.46.5-2ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.2",
+      "bom-ref": "bfe7b9f8-f53f-48a7-891c-b2bb93942375"
+    },
+    {
+      "type": "library",
+      "name": "libssl3",
+      "version": "3.0.2-0ubuntu1.18",
+      "purl": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.18",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          },
+          {
+            "license": {
+              "id": "Artistic"
+            }
+          },
+          {
+            "license": {
+              "id": "Artistic or GPL-1+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "62627df7-8fdc-4e94-8a0e-b9d70692f620"
+    },
+    {
+      "type": "library",
+      "name": "libstdc++6",
+      "version": "12.3.0-1ubuntu1~22.04",
+      "purl": "pkg:deb/ubuntu/libstdc%2B%2B6@12.3.0-1ubuntu1~22.04",
+      "bom-ref": "381e9a22-7557-4869-9709-fbe43a3e8678"
+    },
+    {
+      "type": "library",
+      "name": "libsystemd0",
+      "version": "249.11-0ubuntu3.12",
+      "purl": "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.12",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "CC0-1.0"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2 with Linux-syscall-note exception"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "67644229-ef04-4f4b-a346-0d3d09d9394b"
+    },
+    {
+      "type": "library",
+      "name": "libtasn1-6",
+      "version": "4.18.0-4build1",
+      "purl": "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1",
+      "bom-ref": "c9d65a9f-dab0-4ecd-ac82-9ec282230cd4"
+    },
+    {
+      "type": "library",
+      "name": "libtinfo6",
+      "version": "6.3-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2ubuntu0.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT/X11"
+            }
+          },
+          {
+            "license": {
+              "id": "X11"
+            }
+          }
+        ]
+      },
+      "bom-ref": "78aec84a-0362-437c-9e30-607972be4138"
+    },
+    {
+      "type": "library",
+      "name": "libtirpc-common",
+      "version": "1.3.2-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libtirpc-common@1.3.2-2ubuntu0.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "PERMISSIVE"
+            }
+          },
+          {
+            "license": {
+              "id": "__AUTO_PERMISSIVE__"
+            }
+          }
+        ]
+      },
+      "bom-ref": "5b03d765-f505-4422-8ceb-296c7f26e6b6"
+    },
+    {
+      "type": "library",
+      "name": "libtirpc3",
+      "version": "1.3.2-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libtirpc3@1.3.2-2ubuntu0.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "PERMISSIVE"
+            }
+          },
+          {
+            "license": {
+              "id": "__AUTO_PERMISSIVE__"
+            }
+          }
+        ]
+      },
+      "bom-ref": "33dd58b4-14ef-46dd-b92b-443460318fdd"
+    },
+    {
+      "type": "library",
+      "name": "libudev1",
+      "version": "249.11-0ubuntu3.12",
+      "purl": "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.12",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "CC0-1.0"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2 with Linux-syscall-note exception"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "35a8ddd4-b266-4328-a2a3-c8dbfe13f29a"
+    },
+    {
+      "type": "library",
+      "name": "libunistring2",
+      "version": "1.0-1",
+      "purl": "pkg:deb/ubuntu/libunistring2@1.0-1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "FreeSoftware"
+            }
+          },
+          {
+            "license": {
+              "id": "GFDL-1.2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+ with distribution exception"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+ or GFDL-1.2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+ or GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          }
+        ]
+      },
+      "bom-ref": "e1507e5c-d043-4bd4-9866-220bbcff676a"
+    },
+    {
+      "type": "library",
+      "name": "libuuid1",
+      "version": "2.37.2-4ubuntu3.4",
+      "purl": "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "69ca9c29-41a1-4b3c-a945-dc6d3bf49cf4"
+    },
+    {
+      "type": "library",
+      "name": "libxxhash0",
+      "version": "0.8.1-1",
+      "purl": "pkg:deb/ubuntu/libxxhash0@0.8.1-1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          }
+        ]
+      },
+      "bom-ref": "450eb39b-6506-4c91-a2ba-9bb5d064a640"
+    },
+    {
+      "type": "library",
+      "name": "libzstd1",
+      "version": "1.4.8+dfsg-3build1",
+      "purl": "pkg:deb/ubuntu/libzstd1@1.4.8%2Bdfsg-3build1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause and GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "zlib"
+            }
+          }
+        ]
+      },
+      "bom-ref": "cd25e14c-efb7-4a2b-9f9c-7ec8f3834099"
+    },
+    {
+      "type": "library",
+      "name": "login",
+      "version": "1:4.8.1-2ubuntu2.2",
+      "purl": "pkg:deb/ubuntu/login@1:4.8.1-2ubuntu2.2",
+      "bom-ref": "ee6f4d89-8f7f-4902-8795-3c08c2ae3c9e"
+    },
+    {
+      "type": "library",
+      "name": "logsave",
+      "version": "1.46.5-2ubuntu1.2",
+      "purl": "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1.2",
+      "bom-ref": "3ff74023-403b-4f86-a2d5-e6ba751115aa"
+    },
+    {
+      "type": "library",
+      "name": "lsb-base",
+      "version": "11.1.0ubuntu4",
+      "purl": "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          }
+        ]
+      },
+      "bom-ref": "3f9169a0-b8ab-4052-ae84-02988ca9945a"
+    },
+    {
+      "type": "library",
+      "name": "mawk",
+      "version": "1.3.4.20200120-3",
+      "purl": "pkg:deb/ubuntu/mawk@1.3.4.20200120-3",
+      "bom-ref": "90c9ddf6-a3ae-4efb-8e78-89c5b6174637"
+    },
+    {
+      "type": "library",
+      "name": "mount",
+      "version": "2.37.2-4ubuntu3.4",
+      "purl": "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "085feb6a-395a-4826-a070-3b7cdef3f963"
+    },
+    {
+      "type": "library",
+      "name": "ncurses-base",
+      "version": "6.3-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/ncurses-base@6.3-2ubuntu0.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT/X11"
+            }
+          },
+          {
+            "license": {
+              "id": "X11"
+            }
+          }
+        ]
+      },
+      "bom-ref": "ef4f303b-25a7-4757-81b9-6c6929fd4558"
+    },
+    {
+      "type": "library",
+      "name": "ncurses-bin",
+      "version": "6.3-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2ubuntu0.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT/X11"
+            }
+          },
+          {
+            "license": {
+              "id": "X11"
+            }
+          }
+        ]
+      },
+      "bom-ref": "1d4ed48d-6044-4365-acb1-d6e1220f2227"
+    },
+    {
+      "type": "library",
+      "name": "passwd",
+      "version": "1:4.8.1-2ubuntu2.2",
+      "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-2ubuntu2.2",
+      "bom-ref": "d3c683cd-8453-481e-abc7-4595a3b1a333"
+    },
+    {
+      "type": "library",
+      "name": "perl-base",
+      "version": "5.34.0-3ubuntu1.3",
+      "purl": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.3",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Artistic"
+            }
+          },
+          {
+            "license": {
+              "id": "Artistic or GPL-1+ or Artistic-dist"
+            }
+          },
+          {
+            "license": {
+              "id": "Artistic-2"
+            }
+          },
+          {
+            "license": {
+              "id": "Artistic-dist"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause-GENERIC"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause-with-weird-numbering"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause-POWERDOG"
+            }
+          },
+          {
+            "license": {
+              "id": "BZIP"
+            }
+          },
+          {
+            "license": {
+              "id": "CC0-1.0"
+            }
+          },
+          {
+            "license": {
+              "id": "DONT-CHANGE-THE-GPL"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat or GPL-1+ or Artistic"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+ or Artistic"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+ or Artistic or Artistic-dist"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+ or Artistic, and BSD-3-clause-GENERIC"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+ or Artistic, and BSD-4-clause-POWERDOG"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+ or Artistic, and Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-1+ or Artistic, and Unicode"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+ or Artistic"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+-WITH-BISON-EXCEPTION"
+            }
+          },
+          {
+            "license": {
+              "id": "HSIEH-BSD"
+            }
+          },
+          {
+            "license": {
+              "id": "HSIEH-DERIVATIVE"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1"
+            }
+          },
+          {
+            "license": {
+              "id": "REGCOMP"
+            }
+          },
+          {
+            "license": {
+              "id": "REGCOMP, and GPL-1+ or Artistic"
+            }
+          },
+          {
+            "license": {
+              "id": "RRA-KEEP-THIS-NOTICE"
+            }
+          },
+          {
+            "license": {
+              "id": "SDBM-PUBLIC-DOMAIN"
+            }
+          },
+          {
+            "license": {
+              "id": "TEXT-TABS"
+            }
+          },
+          {
+            "license": {
+              "id": "Unicode"
+            }
+          },
+          {
+            "license": {
+              "id": "ZLIB"
+            }
+          }
+        ]
+      },
+      "bom-ref": "a4f5a011-20ab-4900-ad3b-95abc552b771"
+    },
+    {
+      "type": "library",
+      "name": "procps",
+      "version": "2:3.3.17-6ubuntu2.1",
+      "purl": "pkg:deb/ubuntu/procps@2:3.3.17-6ubuntu2.1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2.0+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.0+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "713b3b05-a9a2-49fb-836e-946336e0bec5"
+    },
+    {
+      "type": "library",
+      "name": "sed",
+      "version": "4.8-1ubuntu2",
+      "purl": "pkg:deb/ubuntu/sed@4.8-1ubuntu2",
+      "bom-ref": "e365f908-a9d3-49e1-9ed9-cedc1dfbb28a"
+    },
+    {
+      "type": "library",
+      "name": "sensible-utils",
+      "version": "0.0.17",
+      "purl": "pkg:deb/ubuntu/sensible-utils@0.0.17",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "All-permissive"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "configure"
+            }
+          },
+          {
+            "license": {
+              "id": "installsh"
+            }
+          }
+        ]
+      },
+      "bom-ref": "416bf13e-7c0e-472b-9732-974f93c69cb5"
+    },
+    {
+      "type": "library",
+      "name": "sysvinit-utils",
+      "version": "3.01-1ubuntu1",
+      "purl": "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "cc746cb6-02ce-47e9-8da9-a7612b850fb8"
+    },
+    {
+      "type": "library",
+      "name": "tar",
+      "version": "1.34+dfsg-1ubuntu0.1.22.04.2",
+      "purl": "pkg:deb/ubuntu/tar@1.34%2Bdfsg-1ubuntu0.1.22.04.2",
+      "bom-ref": "8748a494-4c49-4e42-a16f-f6c28100e9bc"
+    },
+    {
+      "type": "library",
+      "name": "ubuntu-keyring",
+      "version": "2021.03.26",
+      "purl": "pkg:deb/ubuntu/ubuntu-keyring@2021.03.26",
+      "bom-ref": "4428e4d8-224a-4fd0-97cd-f93b64a17b43"
+    },
+    {
+      "type": "library",
+      "name": "usrmerge",
+      "version": "25ubuntu2",
+      "purl": "pkg:deb/ubuntu/usrmerge@25ubuntu2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "GPL v2 or later (please see /usr/share/common-licenses/GPL-2)."
+            }
+          }
+        ]
+      },
+      "bom-ref": "6b50af9b-9d96-422d-97d9-c4f082e6b209"
+    },
+    {
+      "type": "library",
+      "name": "util-linux",
+      "version": "2.37.2-4ubuntu3.4",
+      "purl": "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-4-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-3+"
+            }
+          },
+          {
+            "license": {
+              "id": "MIT"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "989511a1-bdb6-45ff-8dea-4adef8f9c5e4"
+    },
+    {
+      "type": "library",
+      "name": "zlib1g",
+      "version": "1:1.2.11.dfsg-2ubuntu9.2",
+      "purl": "pkg:deb/ubuntu/zlib1g@1:1.2.11.dfsg-2ubuntu9.2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Zlib"
+            }
+          }
+        ]
+      },
+      "bom-ref": "71b0ae17-3a10-4c7b-8a49-99ccc6363214"
+    },
+    {
+      "type": "library",
+      "name": "libapparmor1",
+      "version": "3.0.4-2ubuntu2.4",
+      "purl": "pkg:deb/ubuntu/libapparmor1@3.0.4-2ubuntu2.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-3-clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-clause or GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          }
+        ]
+      },
+      "bom-ref": "79cb04d7-09f8-4c4f-b4f8-0733f2576a51"
+    },
+    {
+      "type": "library",
+      "name": "libargon2-1",
+      "version": "0~20171227-0.3",
+      "purl": "pkg:deb/ubuntu/libargon2-1@0~20171227-0.3",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          },
+          {
+            "license": {
+              "id": "CC0"
+            }
+          },
+          {
+            "license": {
+              "id": "CC0 or Apache-2.0"
+            }
+          }
+        ]
+      },
+      "bom-ref": "4317d6df-6060-4a54-8793-209346aa9991"
+    },
+    {
+      "type": "library",
+      "name": "libcryptsetup12",
+      "version": "2:2.4.3-1ubuntu1.3",
+      "purl": "pkg:deb/ubuntu/libcryptsetup12@2:2.4.3-1ubuntu1.3",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          },
+          {
+            "license": {
+              "id": "CC0"
+            }
+          },
+          {
+            "license": {
+              "id": "CC0 or Apache-2.0"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+ with OpenSSL exception"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+ with OpenSSL exception"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          }
+        ]
+      },
+      "bom-ref": "7be336ab-82ae-42e7-9a0b-ab3e60893fef"
+    },
+    {
+      "type": "library",
+      "name": "libdevmapper1.02.1",
+      "version": "2:1.02.175-2.1ubuntu5",
+      "purl": "pkg:deb/ubuntu/libdevmapper1.02.1@2:1.02.175-2.1ubuntu5",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2.0"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2.0+"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1"
+            }
+          }
+        ]
+      },
+      "bom-ref": "84830894-4ba5-48c8-9e9b-8d8e94613dd8"
+    },
+    {
+      "type": "library",
+      "name": "libip4tc2",
+      "version": "1.8.7-1ubuntu5.2",
+      "purl": "pkg:deb/ubuntu/libip4tc2@1.8.7-1ubuntu5.2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Artistic"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "custom"
+            }
+          }
+        ]
+      },
+      "bom-ref": "0d9a2c05-9f94-4366-b475-03b2c598a617"
+    },
+    {
+      "type": "library",
+      "name": "libjson-c5",
+      "version": "0.15-3~ubuntu1.22.04.2",
+      "purl": "pkg:deb/ubuntu/libjson-c5@0.15-3~ubuntu1.22.04.2",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "Expat"
+            }
+          }
+        ]
+      },
+      "bom-ref": "9f1d8337-80fa-4bfe-9a0e-7d0edb8958f8"
+    },
+    {
+      "type": "library",
+      "name": "libkmod2",
+      "version": "29-1ubuntu1",
+      "purl": "pkg:deb/ubuntu/libkmod2@29-1ubuntu1",
+      "bom-ref": "7a05f957-0608-484e-8b08-a4032b8d09d7"
+    },
+    {
+      "type": "library",
+      "name": "sudo",
+      "version": "1.9.9-1ubuntu2.4",
+      "purl": "pkg:deb/ubuntu/sudo@1.9.9-1ubuntu2.4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "BSD-2-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "BSD-3-Clause"
+            }
+          },
+          {
+            "license": {
+              "id": "ISC"
+            }
+          },
+          {
+            "license": {
+              "id": "Zlib"
+            }
+          },
+          {
+            "license": {
+              "id": "other"
+            }
+          }
+        ]
+      },
+      "bom-ref": "837b4109-7ace-4612-adce-ac8d4e944f6a"
+    },
+    {
+      "type": "library",
+      "name": "systemd",
+      "version": "249.11-0ubuntu3.12",
+      "purl": "pkg:deb/ubuntu/systemd@249.11-0ubuntu3.12",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "CC0-1.0"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2 with Linux-syscall-note exception"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          }
+        ]
+      },
+      "bom-ref": "909b74e0-746e-43fe-a30d-39ef1fc7e815"
+    },
+    {
+      "type": "library",
+      "name": "systemd",
+      "version": "249.11-0ubuntu3.12",
+      "purl": "pkg:deb/ubuntu/systemd@249.11-0ubuntu3.12",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "id": "CC0-1.0"
+            }
+          },
+          {
+            "license": {
+              "id": "Expat"
+            }
+          },
+          {
+            "license": {
+              "id": "public-domain"
+            }
+          },
+          {
+            "license": {
+              "id": "LGPL-2.1+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2+"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2 with Linux-syscall-note exception"
+            }
+          },
+          {
+            "license": {
+              "id": "GPL-2"
+            }
+          }
+        ]
+      },
+      "bom-ref": "a0cb127f-34f4-4471-a5f0-8d88969b570c"
+    }
+  ]
+}
