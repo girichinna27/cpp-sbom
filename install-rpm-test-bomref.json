@@ -1,0 +1,2618 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.3",
+  "serialNumber": "urn:uuid:90555671-7820-4f84-9717-b9c95cdfe764",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-04-15T10:59:23Z",
+    "tools": [
+      {
+        "vendor": "Tern Tools",
+        "name": "Tern",
+        "version": "2.12.1"
+      }
+    ],
+    "component": {
+      "type": "container",
+      "scope": "required",
+      "name": "clickhouse/install-rpm-test",
+      "version": "sha256:8f2eef932508a3c8f7644289bf59fccdc2d5aa2a814fa7554273b5b58a35b39e",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8f2eef932508a3c8f7644289bf59fccdc2d5aa2a814fa7554273b5b58a35b39e"
+        }
+      ],
+      "properties": [
+        {
+          "name": "tern:repotag",
+          "value": "clickhouse/install-rpm-test:latest"
+        },
+        {
+          "name": "tern:os_guess",
+          "value": "CentOS Linux 8"
+        }
+      ],
+      "purl": "pkg:docker/clickhouse/install-rpm-test@sha256:8f2eef932508a3c8f7644289bf59fccdc2d5aa2a814fa7554273b5b58a35b39e"
+    }
+  },
+  "components": [
+    {
+      "name": "crypto-policies",
+      "version": "20210209",
+      "type": "application",
+      "purl": "pkg:rpm/centos/crypto-policies@20210209",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "07778ebe-92df-4084-be5e-789d975b209a"
+    },
+    {
+      "name": "python3-pip-wheel",
+      "version": "9.0.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-pip-wheel@9.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT and Python and ASL 2.0 and BSD and ISC and LGPLv2 and MPLv2.0 and (ASL 2.0 or BSD)"
+          }
+        }
+      ],
+      "bom-ref": "fc968c03-ddc3-4dff-9048-312b7f5d9cc6"
+    },
+    {
+      "name": "ncurses-base",
+      "version": "6.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/ncurses-base@6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "f64356ef-2769-40f7-b765-8b83fa010d8f"
+    },
+    {
+      "name": "dnf-data",
+      "version": "4.4.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dnf-data@4.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and GPLv2 and GPL"
+          }
+        }
+      ],
+      "bom-ref": "6ff2a13f-f843-4679-8f45-b7813b6f8960"
+    },
+    {
+      "name": "dhcp-common",
+      "version": "4.3.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dhcp-common@4.3.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "bom-ref": "cf0f97da-03cc-4cce-a1cf-7e0fe494f8c5"
+    },
+    {
+      "name": "centos-gpg-keys",
+      "version": "8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/centos-gpg-keys@8",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "9509f4d4-b44a-4412-83bd-2232417b3d24"
+    },
+    {
+      "name": "centos-linux-repos",
+      "version": "8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/centos-linux-repos@8",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "32b1d264-f107-4a8f-aa05-df4972e74a16"
+    },
+    {
+      "name": "filesystem",
+      "version": "3.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/filesystem@3.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "5fc3c5ee-a165-4edd-9197-3b4abf2f6026"
+    },
+    {
+      "name": "pcre2",
+      "version": "10.32",
+      "type": "application",
+      "purl": "pkg:rpm/centos/pcre2@10.32",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "72035004-caab-4147-9996-63052d2a97ca"
+    },
+    {
+      "name": "ncurses-libs",
+      "version": "6.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/ncurses-libs@6.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "1bb6a045-43a5-4118-b2a8-3c5d1fa8207b"
+    },
+    {
+      "name": "glibc-common",
+      "version": "2.28",
+      "type": "application",
+      "purl": "pkg:rpm/centos/glibc-common@2.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL"
+          }
+        }
+      ],
+      "bom-ref": "14055ae2-9e10-4951-89e4-ae6a0ae833ff"
+    },
+    {
+      "name": "bash",
+      "version": "4.4.19",
+      "type": "application",
+      "purl": "pkg:rpm/centos/bash@4.4.19",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "2ebff9ad-f1b8-4bf0-8281-89c0e6a078c0"
+    },
+    {
+      "name": "zlib",
+      "version": "1.2.11",
+      "type": "application",
+      "purl": "pkg:rpm/centos/zlib@1.2.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "zlib and Boost"
+          }
+        }
+      ],
+      "bom-ref": "ddcc7926-79ea-47d6-a5d2-74fa248c398c"
+    },
+    {
+      "name": "bzip2-libs",
+      "version": "1.0.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/bzip2-libs@1.0.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "0a3f4320-4322-42c3-b4af-fa439b87fc54"
+    },
+    {
+      "name": "libgpg-error",
+      "version": "1.31",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libgpg-error@1.31",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "2a5590f9-d6b4-41a7-863b-4f74f51abf62"
+    },
+    {
+      "name": "elfutils-libelf",
+      "version": "0.182",
+      "type": "application",
+      "purl": "pkg:rpm/centos/elfutils-libelf@0.182",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ or LGPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "76719d4f-ea83-431f-abf4-ec3bf0410401"
+    },
+    {
+      "name": "libcom_err",
+      "version": "1.45.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libcom_err@1.45.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "19435cfd-b45e-4285-905e-5597d1542de4"
+    },
+    {
+      "name": "libxml2",
+      "version": "2.9.7",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libxml2@2.9.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "06313fb7-594a-4770-adc7-15911de9614c"
+    },
+    {
+      "name": "expat",
+      "version": "2.2.5",
+      "type": "application",
+      "purl": "pkg:rpm/centos/expat@2.2.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "50b2699d-bd98-4333-91af-6b9e8a233639"
+    },
+    {
+      "name": "libuuid",
+      "version": "2.32.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libuuid@2.32.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "16a1c0d0-8b27-416c-9a1d-a7d3ffe41092"
+    },
+    {
+      "name": "chkconfig",
+      "version": "1.13",
+      "type": "application",
+      "purl": "pkg:rpm/centos/chkconfig@1.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "bd4d509b-a2d9-4dfc-b52d-6e47c2099044"
+    },
+    {
+      "name": "gmp",
+      "version": "6.1.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gmp@6.1.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv3+ or GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "78e771d4-769a-49dd-8f18-34ee60a83ffd"
+    },
+    {
+      "name": "libattr",
+      "version": "2.4.48",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libattr@2.4.48",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "a36ec353-df59-44ac-a35b-ae15e0db7b4e"
+    },
+    {
+      "name": "coreutils-single",
+      "version": "8.30",
+      "type": "application",
+      "purl": "pkg:rpm/centos/coreutils-single@8.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "76818627-176f-41d9-bfc5-0ef1ed29f510"
+    },
+    {
+      "name": "sed",
+      "version": "4.5",
+      "type": "application",
+      "purl": "pkg:rpm/centos/sed@4.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "e4d24069-37d4-45f0-8d78-68b408cb7e83"
+    },
+    {
+      "name": "libcap-ng",
+      "version": "0.7.9",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libcap-ng@0.7.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "4dc18986-c0be-420f-9f0a-a2b16e004316"
+    },
+    {
+      "name": "libsmartcols",
+      "version": "2.32.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libsmartcols@2.32.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "4107d552-9bd9-42e6-9266-d7c6c9cdf6b4"
+    },
+    {
+      "name": "lz4-libs",
+      "version": "1.8.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/lz4-libs@1.8.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and BSD"
+          }
+        }
+      ],
+      "bom-ref": "21597219-d231-4d14-a7a0-4576853ab0f6"
+    },
+    {
+      "name": "file-libs",
+      "version": "5.33",
+      "type": "application",
+      "purl": "pkg:rpm/centos/file-libs@5.33",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "ba273211-c31b-4b66-8121-5358f5b5329c"
+    },
+    {
+      "name": "p11-kit",
+      "version": "0.23.22",
+      "type": "application",
+      "purl": "pkg:rpm/centos/p11-kit@0.23.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "186fe3c8-d309-48d6-a9d7-0ebfa0309cc4"
+    },
+    {
+      "name": "cracklib",
+      "version": "2.9.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/cracklib@2.9.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "12c8cec4-f960-4bc8-a678-d1af9ca9a911"
+    },
+    {
+      "name": "libunistring",
+      "version": "0.9.9",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libunistring@0.9.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ or LGPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "a2f2f7d4-6a6b-4361-82d0-3c0494b455d3"
+    },
+    {
+      "name": "libassuan",
+      "version": "2.5.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libassuan@2.5.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "ef7b465f-3f5d-43d4-ac36-86c3df11089c"
+    },
+    {
+      "name": "keyutils-libs",
+      "version": "1.5.10",
+      "type": "application",
+      "purl": "pkg:rpm/centos/keyutils-libs@1.5.10",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "f10fadde-1bcd-499b-9ee3-99cbf623e3e5"
+    },
+    {
+      "name": "libnl3",
+      "version": "3.5.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libnl3@3.5.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2"
+          }
+        }
+      ],
+      "bom-ref": "9d810f59-d00a-45ca-b148-ca660739ab2b"
+    },
+    {
+      "name": "p11-kit-trust",
+      "version": "0.23.22",
+      "type": "application",
+      "purl": "pkg:rpm/centos/p11-kit-trust@0.23.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "6ccedfba-635b-43a8-9659-2c4a58e71c1f"
+    },
+    {
+      "name": "pcre",
+      "version": "8.42",
+      "type": "application",
+      "purl": "pkg:rpm/centos/pcre@8.42",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "0ea9e0b7-a23f-460c-8214-163805131c29"
+    },
+    {
+      "name": "systemd-libs",
+      "version": "239",
+      "type": "application",
+      "purl": "pkg:rpm/centos/systemd-libs@239",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and MIT"
+          }
+        }
+      ],
+      "bom-ref": "2735408d-1427-4d3b-9b41-2c7badb070d4"
+    },
+    {
+      "name": "dbus-tools",
+      "version": "1.12.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dbus-tools@1.12.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "(GPLv2+ or AFL) and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "db1803bc-e9ec-48d0-b944-aa142bff67df"
+    },
+    {
+      "name": "libusbx",
+      "version": "1.0.23",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libusbx@1.0.23",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "4b4d92b2-64e0-445e-832f-18a25cd007be"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "2020.2.41",
+      "type": "application",
+      "purl": "pkg:rpm/centos/ca-certificates@2020.2.41",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "ef620f34-057f-4691-8dd0-1c5f4c1a82fc"
+    },
+    {
+      "name": "libdb",
+      "version": "5.3.28",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libdb@5.3.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD and LGPLv2 and Sleepycat"
+          }
+        }
+      ],
+      "bom-ref": "182e24b4-10dc-4a4e-825a-5bc1d289df9e"
+    },
+    {
+      "name": "iproute",
+      "version": "5.9.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/iproute@5.9.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "694d2b53-1c50-4a81-8ac6-918176593345"
+    },
+    {
+      "name": "libdb-utils",
+      "version": "5.3.28",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libdb-utils@5.3.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD and LGPLv2 and Sleepycat"
+          }
+        }
+      ],
+      "bom-ref": "60ad560f-4e1a-4d2d-997a-ce32db1ff56e"
+    },
+    {
+      "name": "tpm2-tss",
+      "version": "2.3.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/tpm2-tss@2.3.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "33756fb9-37fb-460e-b77e-b80bd0c421b0"
+    },
+    {
+      "name": "xz",
+      "version": "5.2.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/xz@5.2.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "db06a50c-9b97-4ebb-b92a-2fc3dd7a12c6"
+    },
+    {
+      "name": "ethtool",
+      "version": "5.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/ethtool@5.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "7d8a7a0f-78e2-4dc8-9d48-45f9362a5e19"
+    },
+    {
+      "name": "libsemanage",
+      "version": "2.9",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libsemanage@2.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "3ee93ade-f1a1-430d-886a-8c6ef97a91c2"
+    },
+    {
+      "name": "dbus-daemon",
+      "version": "1.12.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dbus-daemon@1.12.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "(GPLv2+ or AFL) and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "9e7ece08-c348-4b45-8fdf-9d2b382a92ca"
+    },
+    {
+      "name": "libfdisk",
+      "version": "2.32.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libfdisk@2.32.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "5237b737-10cf-402e-9e00-84aca9c7cf82"
+    },
+    {
+      "name": "mpfr",
+      "version": "3.1.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/mpfr@3.1.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv3+ and GPLv3+ and GFDL"
+          }
+        }
+      ],
+      "bom-ref": "257c9a58-aa4e-4b4a-9801-9ec3760cfec3"
+    },
+    {
+      "name": "gnutls",
+      "version": "3.6.14",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gnutls@3.6.14",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "957d1b03-0d24-4b3d-a5cf-0b7c8fc1af8f"
+    },
+    {
+      "name": "snappy",
+      "version": "1.1.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/snappy@1.1.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "99e82564-a6d7-4992-8d7c-d7bfcc84ab45"
+    },
+    {
+      "name": "libmetalink",
+      "version": "0.1.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libmetalink@0.1.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "c8cc603b-3b66-41a3-8501-9eebe2b8f016"
+    },
+    {
+      "name": "libksba",
+      "version": "1.3.5",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libksba@1.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "(LGPLv3+ or GPLv2+) and GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "2f880b34-43e9-4905-9556-a401edc1d9e2"
+    },
+    {
+      "name": "ipcalc",
+      "version": "0.2.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/ipcalc@0.2.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "24075fe2-a471-41bb-8e88-2cf160ff0f34"
+    },
+    {
+      "name": "libseccomp",
+      "version": "2.5.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libseccomp@2.5.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2"
+          }
+        }
+      ],
+      "bom-ref": "2aad5c28-da8e-4a16-b395-ac27bdf58791"
+    },
+    {
+      "name": "gawk",
+      "version": "4.2.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gawk@4.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+ and GPLv2+ and LGPLv2+ and BSD"
+          }
+        }
+      ],
+      "bom-ref": "8f3b3e11-8ce2-4b59-982b-cd5daf20a990"
+    },
+    {
+      "name": "krb5-libs",
+      "version": "1.18.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/krb5-libs@1.18.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "1995273e-64f9-432c-8bbb-ae2078445f97"
+    },
+    {
+      "name": "libnsl2",
+      "version": "1.2.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libnsl2@1.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "c7e5f92f-24f4-4a4e-a246-eb87ead6f7bb"
+    },
+    {
+      "name": "platform-python",
+      "version": "3.6.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/platform-python@3.6.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Python"
+          }
+        }
+      ],
+      "bom-ref": "7da18bfa-733e-4e03-a257-839e4eb8a1b8"
+    },
+    {
+      "name": "libpwquality",
+      "version": "1.4.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libpwquality@1.4.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD or GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "87a2c1b4-a63a-487b-8ff5-df079b9b8025"
+    },
+    {
+      "name": "util-linux",
+      "version": "2.32.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/util-linux@2.32.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "a1b22289-5dde-45f6-a3fd-c7ebe81cde46"
+    },
+    {
+      "name": "curl",
+      "version": "7.61.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/curl@7.61.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "31f8c048-d560-4ca1-828a-10384efef537"
+    },
+    {
+      "name": "rpm-libs",
+      "version": "4.14.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/rpm-libs@4.14.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+ with exceptions"
+          }
+        }
+      ],
+      "bom-ref": "82134fa6-a506-4dda-8e89-c42af3aca5f6"
+    },
+    {
+      "name": "python3-libcomps",
+      "version": "0.1.11",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-libcomps@0.1.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "3a66d6fa-cdca-4cd8-b918-742bedd4c070"
+    },
+    {
+      "name": "cyrus-sasl-lib",
+      "version": "2.1.27",
+      "type": "application",
+      "purl": "pkg:rpm/centos/cyrus-sasl-lib@2.1.27",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD with advertising"
+          }
+        }
+      ],
+      "bom-ref": "9de5eca9-bb80-4a63-9af9-53fbd0720580"
+    },
+    {
+      "name": "libyaml",
+      "version": "0.1.7",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libyaml@0.1.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "244c8019-6fb7-49db-90b3-2f25a397eb69"
+    },
+    {
+      "name": "npth",
+      "version": "1.5",
+      "type": "application",
+      "purl": "pkg:rpm/centos/npth@1.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "125041a7-3f15-4cc9-9c20-4f87e4d6de93"
+    },
+    {
+      "name": "gpgme",
+      "version": "1.13.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gpgme@1.13.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and MIT"
+          }
+        }
+      ],
+      "bom-ref": "048ad174-5435-4a63-9a09-eaa21091cd5c"
+    },
+    {
+      "name": "libdnf",
+      "version": "0.55.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libdnf@0.55.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "e737e6d3-fa3d-4a84-8d5e-bfc6a93d4b9f"
+    },
+    {
+      "name": "python3-hawkey",
+      "version": "0.55.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-hawkey@0.55.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "44341f4b-5851-4da0-8955-1c3cdf8d5123"
+    },
+    {
+      "name": "pciutils-libs",
+      "version": "3.7.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/pciutils-libs@3.7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "6537cb6f-37fb-421d-a6ff-ce42347a4491"
+    },
+    {
+      "name": "rdma-core",
+      "version": "32.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/rdma-core@32.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2 or BSD"
+          }
+        }
+      ],
+      "bom-ref": "e988aa40-59f4-4338-89e1-888706e72fa2"
+    },
+    {
+      "name": "libpcap",
+      "version": "1.9.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libpcap@1.9.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD with advertising"
+          }
+        }
+      ],
+      "bom-ref": "90f681f3-1d7f-4c3f-889c-3f5fabc4b0dc"
+    },
+    {
+      "name": "device-mapper",
+      "version": "1.02.175",
+      "type": "application",
+      "purl": "pkg:rpm/centos/device-mapper@1.02.175",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "73a5cc04-e36c-4bbc-a557-b0bf1918f23a"
+    },
+    {
+      "name": "cryptsetup-libs",
+      "version": "2.3.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/cryptsetup-libs@2.3.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "bc871290-e60d-4657-b0bf-3d5085038a25"
+    },
+    {
+      "name": "elfutils-libs",
+      "version": "0.182",
+      "type": "application",
+      "purl": "pkg:rpm/centos/elfutils-libs@0.182",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ or LGPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "da5c5164-0950-4e3f-9454-4b361adbaada"
+    },
+    {
+      "name": "systemd",
+      "version": "239",
+      "type": "application",
+      "purl": "pkg:rpm/centos/systemd@239",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and MIT and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "5c966f61-9f6f-4b01-99a4-de33823c9637"
+    },
+    {
+      "name": "iputils",
+      "version": "20180629",
+      "type": "application",
+      "purl": "pkg:rpm/centos/iputils@20180629",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "44026c73-386a-43cc-876d-490707a9e00a"
+    },
+    {
+      "name": "libkcapi",
+      "version": "1.2.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libkcapi@1.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD or GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "3424296e-0b6d-4060-a6be-536f2943eeeb"
+    },
+    {
+      "name": "systemd-udev",
+      "version": "239",
+      "type": "application",
+      "purl": "pkg:rpm/centos/systemd-udev@239",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "7a1abb27-5894-4d38-964a-cbacd4731d3d"
+    },
+    {
+      "name": "dracut-network",
+      "version": "049",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dracut-network@049",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "d74ec6cc-2c3c-44e4-8fb7-e1453cabda93"
+    },
+    {
+      "name": "rpm-build-libs",
+      "version": "4.14.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/rpm-build-libs@4.14.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+ with exceptions"
+          }
+        }
+      ],
+      "bom-ref": "4c574e15-b786-40c8-a2f7-420c07dc1864"
+    },
+    {
+      "name": "python3-dnf",
+      "version": "4.4.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-dnf@4.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and GPLv2 and GPL"
+          }
+        }
+      ],
+      "bom-ref": "24335b34-43f1-4269-8cc6-6bcf19703836"
+    },
+    {
+      "name": "yum",
+      "version": "4.4.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/yum@4.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and GPLv2 and GPL"
+          }
+        }
+      ],
+      "bom-ref": "0968c2d1-edbf-4f47-ba25-0deee64848bd"
+    },
+    {
+      "name": "binutils",
+      "version": "2.30",
+      "type": "application",
+      "purl": "pkg:rpm/centos/binutils@2.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "cae2c02e-a64d-4e2a-9bd1-28d56efbe3c0"
+    },
+    {
+      "name": "vim-minimal",
+      "version": "8.0.1763",
+      "type": "application",
+      "purl": "pkg:rpm/centos/vim-minimal@8.0.1763",
+      "licenses": [
+        {
+          "license": {
+            "id": "Vim and MIT"
+          }
+        }
+      ],
+      "bom-ref": "2c29d2b9-c1f5-43bf-a093-7d8abd7c529c"
+    },
+    {
+      "name": "less",
+      "version": "530",
+      "type": "application",
+      "purl": "pkg:rpm/centos/less@530",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+ or BSD"
+          }
+        }
+      ],
+      "bom-ref": "7d13e924-052b-4ae8-8199-ce861086d10a"
+    },
+    {
+      "name": "rootfiles",
+      "version": "8.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/rootfiles@8.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "00fc35f9-bd33-45c6-bec0-6eb5040758b3"
+    },
+    {
+      "name": "libgcc",
+      "version": "8.4.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libgcc@8.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD"
+          }
+        }
+      ],
+      "bom-ref": "fece6e0f-06c9-458c-9669-e54c1af48144"
+    },
+    {
+      "name": "python3-setuptools-wheel",
+      "version": "39.2.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-setuptools-wheel@39.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "55c51e3a-1967-4ee3-b104-ba0a1248b684"
+    },
+    {
+      "name": "tzdata",
+      "version": "2021a",
+      "type": "application",
+      "purl": "pkg:rpm/centos/tzdata@2021a",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "ad82a15c-6045-4c17-acde-8764e8d1cfbd"
+    },
+    {
+      "name": "libreport-filesystem",
+      "version": "2.9.5",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libreport-filesystem@2.9.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "bb7565cc-68fc-49b2-bab6-64cb699d13e5"
+    },
+    {
+      "name": "hwdata",
+      "version": "0.314",
+      "type": "application",
+      "purl": "pkg:rpm/centos/hwdata@0.314",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "bea2b96a-85be-4b85-81b7-495fbbf8a874"
+    },
+    {
+      "name": "dbus-common",
+      "version": "1.12.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dbus-common@1.12.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "(GPLv2+ or AFL) and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "46220286-54af-47b0-8295-6436eca3c5eb"
+    },
+    {
+      "name": "centos-linux-release",
+      "version": "8.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/centos-linux-release@8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "b7ebff1c-e3cd-4de6-9b50-23c52600a402"
+    },
+    {
+      "name": "setup",
+      "version": "2.12.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/setup@2.12.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "98d55069-7c42-4e93-9ac0-c4bcc957e125"
+    },
+    {
+      "name": "basesystem",
+      "version": "11",
+      "type": "application",
+      "purl": "pkg:rpm/centos/basesystem@11",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "3477f94c-afa1-4760-a2e8-9b4d0a6d5997"
+    },
+    {
+      "name": "libselinux",
+      "version": "2.9",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libselinux@2.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "4adb8105-e3c5-4a29-80fb-ccc3919bbe34"
+    },
+    {
+      "name": "glibc-minimal-langpack",
+      "version": "2.28",
+      "type": "application",
+      "purl": "pkg:rpm/centos/glibc-minimal-langpack@2.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL"
+          }
+        }
+      ],
+      "bom-ref": "31f81055-ef32-45d4-b44c-3e52d101e2fe"
+    },
+    {
+      "name": "glibc",
+      "version": "2.28",
+      "type": "application",
+      "purl": "pkg:rpm/centos/glibc@2.28",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL"
+          }
+        }
+      ],
+      "bom-ref": "94e2e805-92a2-463d-8895-394f0b84ac5d"
+    },
+    {
+      "name": "libsepol",
+      "version": "2.9",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libsepol@2.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "7dfae28d-294c-40ab-9fae-efa0656630ab"
+    },
+    {
+      "name": "xz-libs",
+      "version": "5.2.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/xz-libs@5.2.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "b5587a5c-8a79-489e-af01-e706a3097095"
+    },
+    {
+      "name": "libcap",
+      "version": "2.26",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libcap@2.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "80b3ce04-aeb5-49e4-8e28-4b4d292b87d5"
+    },
+    {
+      "name": "info",
+      "version": "6.5",
+      "type": "application",
+      "purl": "pkg:rpm/centos/info@6.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "12e408e5-2e94-4e02-b53f-8be9cdde5c32"
+    },
+    {
+      "name": "libzstd",
+      "version": "1.4.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libzstd@1.4.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD and GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "2bbdb8c9-f3c8-4de5-9b19-58b06fe39328"
+    },
+    {
+      "name": "libxcrypt",
+      "version": "4.1.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libxcrypt@4.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and BSD and Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "e9e01731-8363-4e7e-93e9-dfba37b9ad84"
+    },
+    {
+      "name": "sqlite-libs",
+      "version": "3.26.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/sqlite-libs@3.26.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public Domain"
+          }
+        }
+      ],
+      "bom-ref": "5b687a4a-350a-4986-8b4c-769efd1c93f4"
+    },
+    {
+      "name": "libstdc++",
+      "version": "8.4.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libstdc%2B%2B@8.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD"
+          }
+        }
+      ],
+      "bom-ref": "fa7d9faf-8678-4479-8fa1-f4989fdf07aa"
+    },
+    {
+      "name": "popt",
+      "version": "1.18",
+      "type": "application",
+      "purl": "pkg:rpm/centos/popt@1.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "723f2c17-8040-4fcc-88ea-57ff4fdf4a7a"
+    },
+    {
+      "name": "readline",
+      "version": "7.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/readline@7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "5e5ce96e-929b-4b3e-b898-7d28a0d3d545"
+    },
+    {
+      "name": "json-c",
+      "version": "0.13.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/json-c@0.13.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "baf9664f-16fd-4132-a3a0-ba64895e95d8"
+    },
+    {
+      "name": "libacl",
+      "version": "2.2.53",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libacl@2.2.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "2ac916e6-fba3-4ffd-81fb-6dcc1baee4ba"
+    },
+    {
+      "name": "libblkid",
+      "version": "2.32.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libblkid@2.32.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "a00e2e89-38e4-43a9-8176-8c7218a004f5"
+    },
+    {
+      "name": "libmount",
+      "version": "2.32.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libmount@2.32.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "9d701cef-dc00-40fc-9083-7e004a107218"
+    },
+    {
+      "name": "audit-libs",
+      "version": "3.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/audit-libs@3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "28b67304-3ed9-404e-b5be-cc51651847f4"
+    },
+    {
+      "name": "lua-libs",
+      "version": "5.3.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/lua-libs@5.3.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "17694be3-5c9a-492a-9fc7-a3237a355b40"
+    },
+    {
+      "name": "libgcrypt",
+      "version": "1.8.5",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libgcrypt@1.8.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "2ab1b0e8-d5e2-4196-a31b-098bcd854c54"
+    },
+    {
+      "name": "libffi",
+      "version": "3.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libffi@3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "53cc1fdc-9e6e-49be-be9d-e3cd02239b69"
+    },
+    {
+      "name": "gzip",
+      "version": "1.9",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gzip@1.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+ and GFDL"
+          }
+        }
+      ],
+      "bom-ref": "ece3bd04-1b8a-40f5-affa-080e47cf6c0c"
+    },
+    {
+      "name": "cracklib-dicts",
+      "version": "2.9.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/cracklib-dicts@2.9.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "b1239ee7-a1ee-42a4-ae1e-bcb61205a57c"
+    },
+    {
+      "name": "libidn2",
+      "version": "2.2.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libidn2@2.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "(GPLv2+ or LGPLv3+) and GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "4d4196fd-0b9f-4afe-858a-7025cc741841"
+    },
+    {
+      "name": "gdbm-libs",
+      "version": "1.18",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gdbm-libs@1.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "3c003d7c-aa55-4717-93f6-0b146b9eb762"
+    },
+    {
+      "name": "libmnl",
+      "version": "1.0.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libmnl@1.0.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "a71df71c-99f1-4b84-9e17-98c0107206b8"
+    },
+    {
+      "name": "libtasn1",
+      "version": "4.13",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libtasn1@4.13",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "f72fc76f-23f3-4ca7-8743-784904bbd382"
+    },
+    {
+      "name": "lzo",
+      "version": "2.08",
+      "type": "application",
+      "purl": "pkg:rpm/centos/lzo@2.08",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "abe625d4-e21f-4a2f-bdde-e5698a4ac6c6"
+    },
+    {
+      "name": "grep",
+      "version": "3.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/grep@3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "a6a1c119-0bd2-4094-aeb3-e10a92dacd54"
+    },
+    {
+      "name": "dbus-libs",
+      "version": "1.12.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dbus-libs@1.12.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "(GPLv2+ or AFL) and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "4e917260-15d1-4bdb-a5f9-cd3ef69c03f1"
+    },
+    {
+      "name": "dhcp-libs",
+      "version": "4.3.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dhcp-libs@4.3.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "bom-ref": "326297b2-7a8b-4863-91ce-b7a94f40c005"
+    },
+    {
+      "name": "procps-ng",
+      "version": "3.3.15",
+      "type": "application",
+      "purl": "pkg:rpm/centos/procps-ng@3.3.15",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL+ and GPLv2 and GPLv2+ and GPLv3+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "6e622445-7886-433d-93c0-742a860c7fdc"
+    },
+    {
+      "name": "openssl-libs",
+      "version": "1.1.1g",
+      "type": "application",
+      "purl": "pkg:rpm/centos/openssl-libs@1.1.1g",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL and ASL 2.0"
+          }
+        }
+      ],
+      "bom-ref": "4023dc3d-9424-4188-9d8f-0797dbec1c23"
+    },
+    {
+      "name": "kmod-libs",
+      "version": "25",
+      "type": "application",
+      "purl": "pkg:rpm/centos/kmod-libs@25",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "7bd3f951-df49-4fcf-bd2b-04388c790e41"
+    },
+    {
+      "name": "kmod",
+      "version": "25",
+      "type": "application",
+      "purl": "pkg:rpm/centos/kmod@25",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "bca3fcc9-c9b7-4464-9455-5e9a917a7844"
+    },
+    {
+      "name": "libarchive",
+      "version": "3.3.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libarchive@3.3.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "1ae29238-99ac-4583-8843-4d78e8422cf8"
+    },
+    {
+      "name": "ima-evm-utils",
+      "version": "1.3.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/ima-evm-utils@1.3.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "6f7e69c3-e454-4005-b4ce-07e052bfa381"
+    },
+    {
+      "name": "squashfs-tools",
+      "version": "4.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/squashfs-tools@4.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "1e983bf2-a7b2-4eed-b576-de305e6013b1"
+    },
+    {
+      "name": "gdbm",
+      "version": "1.18",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gdbm@1.18",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "95223035-ae70-43bb-9e27-8b0fa9c0fc99"
+    },
+    {
+      "name": "shadow-utils",
+      "version": "4.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/shadow-utils@4.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "b7d9fd87-e4e9-49f9-afee-3ea80d9a871e"
+    },
+    {
+      "name": "libutempter",
+      "version": "1.1.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libutempter@1.1.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "9cc4ab09-8b3b-42bf-a6f5-341c7e8bd159"
+    },
+    {
+      "name": "acl",
+      "version": "2.2.53",
+      "type": "application",
+      "purl": "pkg:rpm/centos/acl@2.2.53",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "6350d85d-6ecb-4cc2-aa81-ee4172394849"
+    },
+    {
+      "name": "nettle",
+      "version": "3.4.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/nettle@3.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv3+ or GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "fa01a139-76c7-45fe-862f-b316522b86f1"
+    },
+    {
+      "name": "glib2",
+      "version": "2.56.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/glib2@2.56.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "587f3be5-e6b5-4102-ac30-2c52c65f65b8"
+    },
+    {
+      "name": "libcomps",
+      "version": "0.1.11",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libcomps@0.1.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "a4db487c-185a-4fb8-ad76-5e7cc6d398c3"
+    },
+    {
+      "name": "findutils",
+      "version": "4.6.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/findutils@4.6.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "bf12694b-0d63-4987-983e-b84728cb420f"
+    },
+    {
+      "name": "cpio",
+      "version": "2.12",
+      "type": "application",
+      "purl": "pkg:rpm/centos/cpio@2.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "df091d74-b7f5-43f8-9ff0-2a22d485dec7"
+    },
+    {
+      "name": "libnghttp2",
+      "version": "1.33.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libnghttp2@1.33.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "db22d8d1-6434-4fa7-ae65-1c4d843d89a7"
+    },
+    {
+      "name": "libsigsegv",
+      "version": "2.11",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libsigsegv@2.11",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "d15b4d9f-36a9-4ebd-ab4b-1fcf048ce89e"
+    },
+    {
+      "name": "libverto",
+      "version": "0.3.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libverto@0.3.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "fd84ab74-821c-4473-8775-559cca98b8c7"
+    },
+    {
+      "name": "libtirpc",
+      "version": "1.1.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libtirpc@1.1.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "SISSL and BSD"
+          }
+        }
+      ],
+      "bom-ref": "3835c0b3-e67f-4b65-8e90-48bdb7d9eb97"
+    },
+    {
+      "name": "platform-python-setuptools",
+      "version": "39.2.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/platform-python-setuptools@39.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "0e71ce13-7b40-46ff-ba62-1d52a5a1fa2e"
+    },
+    {
+      "name": "python3-libs",
+      "version": "3.6.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-libs@3.6.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "Python"
+          }
+        }
+      ],
+      "bom-ref": "3acea303-7ba2-4f75-a010-72bf0598b877"
+    },
+    {
+      "name": "pam",
+      "version": "1.3.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/pam@1.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "e9fadc2b-b863-470d-b2c1-df7f35e56d06"
+    },
+    {
+      "name": "libcurl-minimal",
+      "version": "7.61.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libcurl-minimal@7.61.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "47102308-e433-4124-9130-d7d7ff4a7e99"
+    },
+    {
+      "name": "rpm",
+      "version": "4.14.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/rpm@4.14.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "8a9b8ac6-a8f2-4fe3-b629-f07f9f6a15fe"
+    },
+    {
+      "name": "libsolv",
+      "version": "0.7.16",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libsolv@0.7.16",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "bom-ref": "90f9492a-ebaf-4dfb-93a0-6166e820fd8c"
+    },
+    {
+      "name": "bind-export-libs",
+      "version": "9.11.26",
+      "type": "application",
+      "purl": "pkg:rpm/centos/bind-export-libs@9.11.26",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPLv2.0"
+          }
+        }
+      ],
+      "bom-ref": "4d40e81d-c307-47a3-9688-34bd72bb068f"
+    },
+    {
+      "name": "openldap",
+      "version": "2.4.46",
+      "type": "application",
+      "purl": "pkg:rpm/centos/openldap@2.4.46",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenLDAP"
+          }
+        }
+      ],
+      "bom-ref": "3217f0f9-58dd-4f5c-bf39-ca1ad4fc1ecc"
+    },
+    {
+      "name": "libmodulemd",
+      "version": "2.9.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libmodulemd@2.9.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "bom-ref": "3dcd01bc-8b03-499b-905a-5e4d2dee695f"
+    },
+    {
+      "name": "gnupg2",
+      "version": "2.2.20",
+      "type": "application",
+      "purl": "pkg:rpm/centos/gnupg2@2.2.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "17be80b6-ea84-44c5-8dac-797adf321719"
+    },
+    {
+      "name": "librepo",
+      "version": "1.12.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/librepo@1.12.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "bdb12f86-b4d4-4e93-8819-afb39e3f5b56"
+    },
+    {
+      "name": "python3-libdnf",
+      "version": "0.55.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-libdnf@0.55.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "52abf48d-8fa2-4cd8-82fd-bcf59e83fba9"
+    },
+    {
+      "name": "python3-gpg",
+      "version": "1.13.1",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-gpg@1.13.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and MIT"
+          }
+        }
+      ],
+      "bom-ref": "f655efa4-b4a5-441f-ab9e-45ab256098d3"
+    },
+    {
+      "name": "pciutils",
+      "version": "3.7.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/pciutils@3.7.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "4c2627db-8843-419a-aaec-ad8cbc581843"
+    },
+    {
+      "name": "libibverbs",
+      "version": "32.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libibverbs@32.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2 or BSD"
+          }
+        }
+      ],
+      "bom-ref": "ca5a73f9-80b0-4cb1-bbc3-adec8f30aba5"
+    },
+    {
+      "name": "iptables-libs",
+      "version": "1.8.4",
+      "type": "application",
+      "purl": "pkg:rpm/centos/iptables-libs@1.8.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2 and Artistic 2.0 and ISC"
+          }
+        }
+      ],
+      "bom-ref": "1f924480-023a-4208-aa6f-ac825a5c02d5"
+    },
+    {
+      "name": "device-mapper-libs",
+      "version": "1.02.175",
+      "type": "application",
+      "purl": "pkg:rpm/centos/device-mapper-libs@1.02.175",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2"
+          }
+        }
+      ],
+      "bom-ref": "f6e1fa52-ac8d-4d51-8c1a-a8042c604200"
+    },
+    {
+      "name": "elfutils-default-yama-scope",
+      "version": "0.182",
+      "type": "application",
+      "purl": "pkg:rpm/centos/elfutils-default-yama-scope@0.182",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ or LGPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "5d873785-1567-49ab-ba45-50e440150588"
+    },
+    {
+      "name": "systemd-pam",
+      "version": "239",
+      "type": "application",
+      "purl": "pkg:rpm/centos/systemd-pam@239",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and MIT and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "666c6f34-0e9d-47af-a788-6c3b5f8799f9"
+    },
+    {
+      "name": "dbus",
+      "version": "1.12.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dbus@1.12.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "(GPLv2+ or AFL) and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "f74574a3-8d81-47ad-88aa-b23c41995e59"
+    },
+    {
+      "name": "dhcp-client",
+      "version": "4.3.6",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dhcp-client@4.3.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "bom-ref": "7a5de011-0e35-410d-abfd-10ea703f679b"
+    },
+    {
+      "name": "libkcapi-hmaccalc",
+      "version": "1.2.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/libkcapi-hmaccalc@1.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD or GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "bdb78007-9a17-4c2e-a67d-7eae726d4042"
+    },
+    {
+      "name": "dracut",
+      "version": "049",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dracut@049",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "010e8c76-8078-403a-a724-02a215191f66"
+    },
+    {
+      "name": "dracut-squash",
+      "version": "049",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dracut-squash@049",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "25c4c7e7-e18f-49a7-85c7-012844b3fe58"
+    },
+    {
+      "name": "python3-rpm",
+      "version": "4.14.3",
+      "type": "application",
+      "purl": "pkg:rpm/centos/python3-rpm@4.14.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "753415ac-dc72-45b9-9195-13132de5db74"
+    },
+    {
+      "name": "dnf",
+      "version": "4.4.2",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dnf@4.4.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and GPLv2 and GPL"
+          }
+        }
+      ],
+      "bom-ref": "d15a8bd2-658f-470a-a696-67fe6c837845"
+    },
+    {
+      "name": "kexec-tools",
+      "version": "2.0.20",
+      "type": "application",
+      "purl": "pkg:rpm/centos/kexec-tools@2.0.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2"
+          }
+        }
+      ],
+      "bom-ref": "cdfa736d-51cc-4c21-8ab9-1a864f34d0c1"
+    },
+    {
+      "name": "tar",
+      "version": "1.30",
+      "type": "application",
+      "purl": "pkg:rpm/centos/tar@1.30",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv3+"
+          }
+        }
+      ],
+      "bom-ref": "fd7c56b2-2bdd-48a6-a151-0f4085831f4d"
+    },
+    {
+      "name": "hostname",
+      "version": "3.20",
+      "type": "application",
+      "purl": "pkg:rpm/centos/hostname@3.20",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "187ca958-9bdc-4f5e-b523-71e16a81907f"
+    },
+    {
+      "name": "langpacks-en",
+      "version": "1.0",
+      "type": "application",
+      "purl": "pkg:rpm/centos/langpacks-en@1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "79d52100-9639-4920-af68-56fd59e24bbc"
+    },
+    {
+      "name": "dbus-daemon",
+      "version": "1.12.8",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dbus-daemon@1.12.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "(GPLv2+ or AFL) and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "85976240-753f-4272-8283-df595b9439bf"
+    },
+    {
+      "name": "systemd",
+      "version": "239",
+      "type": "application",
+      "purl": "pkg:rpm/centos/systemd@239",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+ and MIT and GPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "f5409258-5df9-4b4c-935e-3d0d9d9ba842"
+    },
+    {
+      "name": "systemd-udev",
+      "version": "239",
+      "type": "application",
+      "purl": "pkg:rpm/centos/systemd-udev@239",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "29969c6c-bdd8-4328-95d1-e934f551f49b"
+    },
+    {
+      "name": "dracut",
+      "version": "049",
+      "type": "application",
+      "purl": "pkg:rpm/centos/dracut@049",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPLv2+ and LGPLv2+"
+          }
+        }
+      ],
+      "bom-ref": "a2dab1d4-32a1-4430-bd49-60b35c0a53ab"
+    }
+  ]
+}
