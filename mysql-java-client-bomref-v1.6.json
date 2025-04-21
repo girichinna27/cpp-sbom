@@ -1,0 +1,1652 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:2982d321-7008-4806-a7e1-0fdbf2952d11",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-04-15T10:52:39Z",
+    "tools": [
+      {
+        "vendor": "Tern Tools",
+        "name": "Tern",
+        "version": "2.12.1"
+      }
+    ],
+    "component": {
+      "type": "container",
+      "name": "clickhouse/mysql-java-client",
+      "version": "sha256:1b37e55b34feed9fc58fd06e1ffe6260b58124e897d54fad449cb583e49c45a1",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1b37e55b34feed9fc58fd06e1ffe6260b58124e897d54fad449cb583e49c45a1"
+        }
+      ],
+      "purl": "pkg:docker/clickhouse/mysql-java-client@sha256:1b37e55b34feed9fc58fd06e1ffe6260b58124e897d54fad449cb583e49c45a1",
+      "properties": [
+        {
+          "name": "tern:repotag",
+          "value": "clickhouse/mysql-java-client:latest"
+        },
+        {
+          "name": "tern:os_guess",
+          "value": "Alpine Linux v3.9"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "musl",
+      "version": "1.1.20-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl/1.1.20-r4",
+      "bom-ref": "479b6e0c-b942-4eda-adf4-19509c698e78"
+    },
+    {
+      "type": "library",
+      "name": "busybox",
+      "version": "1.29.3-r10",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/busybox/1.29.3-r10",
+      "bom-ref": "2ce5effe-7cc4-4b4d-9a09-fb3fe4d64b81"
+    },
+    {
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.1.0-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-baselayout/3.1.0-r3",
+      "bom-ref": "01d9ba8d-6ab2-4108-a2e9-1194b8bbf74f"
+    },
+    {
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.1-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-keys/2.1-r1",
+      "bom-ref": "04b13edb-b414-42e7-a0ac-c99ed8b9041b"
+    },
+    {
+      "type": "library",
+      "name": "libcrypto1.1",
+      "version": "1.1.1b-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcrypto1.1/1.1.1b-r1",
+      "bom-ref": "1199e1c2-6ed4-406d-9be0-eb0f3219d851"
+    },
+    {
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1b-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libssl1.1/1.1.1b-r1",
+      "bom-ref": "d745837c-32db-4792-a435-0624aa667251"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates-cacert",
+      "version": "20190108-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates-cacert/20190108-r0",
+      "bom-ref": "a75c0427-47b0-4173-ade2-5fc0a9eca361"
+    },
+    {
+      "type": "library",
+      "name": "libtls-standalone",
+      "version": "2.7.4-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libtls-standalone/2.7.4-r6",
+      "bom-ref": "e6e59a05-b9a8-45e5-9e28-5ee94098d285"
+    },
+    {
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.29.3-r10",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ssl_client/1.29.3-r10",
+      "bom-ref": "23d9f153-5486-43a1-b13c-25e8334d834c"
+    },
+    {
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.11-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "zlib"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/zlib/1.2.11-r1",
+      "bom-ref": "608e14b7-a8bf-4ff3-a795-c7ecd7b30820"
+    },
+    {
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.10.3-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL2"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/apk-tools/2.10.3-r1",
+      "bom-ref": "5c495227-fac1-4be0-af0f-a98fb39b64e4"
+    },
+    {
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.2.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/scanelf/1.2.3-r0",
+      "bom-ref": "105d2448-5d1b-4cb6-85a3-524be19502c0"
+    },
+    {
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.1.20-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT BSD GPL2+"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl-utils/1.1.20-r4",
+      "bom-ref": "7f03c94d-2406-425a-8a57-180dee2ff929"
+    },
+    {
+      "type": "library",
+      "name": "libc-utils",
+      "version": "0.7.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libc-utils/0.7.1-r0",
+      "bom-ref": "8150a836-5bda-4899-ba62-f84387a78068"
+    },
+    {
+      "type": "library",
+      "name": "libffi",
+      "version": "3.2.1-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libffi/3.2.1-r6",
+      "bom-ref": "4fb33523-9457-4655-be3d-47be1845d917"
+    },
+    {
+      "type": "library",
+      "name": "p11-kit",
+      "version": "0.23.14-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/p11-kit/0.23.14-r0",
+      "bom-ref": "dbd5cb9d-0059-4197-ae7c-350899156258"
+    },
+    {
+      "type": "library",
+      "name": "libtasn1",
+      "version": "4.13-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0 LGPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libtasn1/4.13-r0",
+      "bom-ref": "153e2d6f-ed47-41f3-b72e-f83de8671a24"
+    },
+    {
+      "type": "library",
+      "name": "p11-kit-trust",
+      "version": "0.23.14-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/p11-kit-trust/0.23.14-r0",
+      "bom-ref": "7b73beb9-46a8-4d7e-87e5-c56b9a9d5582"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20190108-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates/20190108-r0",
+      "bom-ref": "f54f0476-fc2f-448e-b77e-461afebbc784"
+    },
+    {
+      "type": "library",
+      "name": "java-cacerts",
+      "version": "1.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/java-cacerts/1.0-r0",
+      "bom-ref": "9a077ca5-7ecf-422a-a71d-c86d14a09489"
+    },
+    {
+      "type": "library",
+      "name": "libgcc",
+      "version": "8.3.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL LGPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libgcc/8.3.0-r0",
+      "bom-ref": "b989ed1d-cbfa-4cf0-9c1b-baa35fd09268"
+    },
+    {
+      "type": "library",
+      "name": "nspr",
+      "version": "4.20-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-1.1 GPL-2.0 LGPL-2.1"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/nspr/4.20-r0",
+      "bom-ref": "3457fda8-1427-4735-bb6d-60770b3329ee"
+    },
+    {
+      "type": "library",
+      "name": "sqlite-libs",
+      "version": "3.26.0-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public-Domain"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/sqlite-libs/3.26.0-r3",
+      "bom-ref": "416a1a88-14fe-41ac-8819-8d2ecb90d5d2"
+    },
+    {
+      "type": "library",
+      "name": "libstdc++",
+      "version": "8.3.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL LGPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libstdc%2B%2B/8.3.0-r0",
+      "bom-ref": "a2ec23a8-4ef1-4c5f-a4d4-e4592c3ccc61"
+    },
+    {
+      "type": "library",
+      "name": "nss",
+      "version": "3.41-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL GPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/nss/3.41-r0",
+      "bom-ref": "11b6ca08-cc3a-4305-9f92-a423dd0ff2d1"
+    },
+    {
+      "type": "library",
+      "name": "libxau",
+      "version": "1.0.8-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxau/1.0.8-r3",
+      "bom-ref": "9d606b46-7e45-4f12-af94-97530c5cc4f4"
+    },
+    {
+      "type": "library",
+      "name": "libbsd",
+      "version": "0.8.6-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libbsd/0.8.6-r2",
+      "bom-ref": "6c19ce4b-eac9-4ebc-9477-27d0bb3d59f1"
+    },
+    {
+      "type": "library",
+      "name": "libxdmcp",
+      "version": "1.1.2-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxdmcp/1.1.2-r5",
+      "bom-ref": "b3223c1f-4c6d-4bba-8bac-7a18f4fafff1"
+    },
+    {
+      "type": "library",
+      "name": "libxcb",
+      "version": "1.13-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxcb/1.13-r2",
+      "bom-ref": "119b363e-8735-419a-9325-7af9a35c6b00"
+    },
+    {
+      "type": "library",
+      "name": "libx11",
+      "version": "1.6.7-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom:XFREE86"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libx11/1.6.7-r0",
+      "bom-ref": "4cdeaee4-5356-4f03-93e1-fd2c067abbce"
+    },
+    {
+      "type": "library",
+      "name": "libxcomposite",
+      "version": "0.4.4-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxcomposite/0.4.4-r2",
+      "bom-ref": "a3879350-7662-409f-8e74-d0c9cacc8f9a"
+    },
+    {
+      "type": "library",
+      "name": "libxext",
+      "version": "1.3.3-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxext/1.3.3-r3",
+      "bom-ref": "81ac6911-d8e5-40ef-b1b8-358fc17c4f12"
+    },
+    {
+      "type": "library",
+      "name": "libxi",
+      "version": "1.7.9-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxi/1.7.9-r2",
+      "bom-ref": "c05fd2c5-4ba3-4df2-9b97-c74a22d7c51f"
+    },
+    {
+      "type": "library",
+      "name": "libxrender",
+      "version": "0.9.10-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxrender/0.9.10-r3",
+      "bom-ref": "d0b3c3f2-da9f-4102-89d6-0268b5a8cbcf"
+    },
+    {
+      "type": "library",
+      "name": "libxtst",
+      "version": "1.2.3-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxtst/1.2.3-r2",
+      "bom-ref": "f9ca1516-2a4d-4d4f-8e51-30578fffcda4"
+    },
+    {
+      "type": "library",
+      "name": "alsa-lib",
+      "version": "1.1.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alsa-lib/1.1.8-r0",
+      "bom-ref": "4ec69fd2-6f12-4354-8667-87ed62cbec77"
+    },
+    {
+      "type": "library",
+      "name": "libbz2",
+      "version": "1.0.6-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libbz2/1.0.6-r6",
+      "bom-ref": "0de0b17b-c136-4f8a-9263-c3e7495cb6fa"
+    },
+    {
+      "type": "library",
+      "name": "libpng",
+      "version": "1.6.37-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Libpng"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libpng/1.6.37-r0",
+      "bom-ref": "2e6ddfdd-439b-4038-a9ae-017c472746da"
+    },
+    {
+      "type": "library",
+      "name": "freetype",
+      "version": "2.9.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "FTL GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/freetype/2.9.1-r2",
+      "bom-ref": "168b69ee-85eb-44ca-9ccf-d02d4d5542c0"
+    },
+    {
+      "type": "library",
+      "name": "giflib",
+      "version": "5.1.4-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/giflib/5.1.4-r2",
+      "bom-ref": "4a0ceebc-e1ae-490d-9ae9-0c3a7db4925b"
+    },
+    {
+      "type": "library",
+      "name": "libjpeg-turbo",
+      "version": "1.5.3-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "IJG"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libjpeg-turbo/1.5.3-r4",
+      "bom-ref": "a95c6f38-0ae2-40f9-b4a6-df90723a2f7d"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8-jre-lib",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8-jre-lib/8.212.04-r0",
+      "bom-ref": "636d17ea-6658-42dd-ab18-a0d22fb1c48a"
+    },
+    {
+      "type": "library",
+      "name": "java-common",
+      "version": "0.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/java-common/0.1-r0",
+      "bom-ref": "57874c4f-374e-4a86-af61-2d96a0840cf6"
+    },
+    {
+      "type": "library",
+      "name": "krb5-conf",
+      "version": "1.0-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/krb5-conf/1.0-r1",
+      "bom-ref": "fb36d17f-b513-4951-8261-7de865193fa2"
+    },
+    {
+      "type": "library",
+      "name": "libcom_err",
+      "version": "1.44.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later LGPL-2.0 BSD-3-Clause MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcom_err/1.44.5-r0",
+      "bom-ref": "62ef16ba-6a0f-44f4-9874-9526cb640226"
+    },
+    {
+      "type": "library",
+      "name": "keyutils-libs",
+      "version": "1.6-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later LGPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/keyutils-libs/1.6-r0",
+      "bom-ref": "c6903a30-238f-41ee-876c-28de19977b4c"
+    },
+    {
+      "type": "library",
+      "name": "libverto",
+      "version": "0.3.0-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libverto/0.3.0-r1",
+      "bom-ref": "1c41af1a-e697-4437-b1cf-7dd5479173f4"
+    },
+    {
+      "type": "library",
+      "name": "krb5-libs",
+      "version": "1.15.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/krb5-libs/1.15.5-r0",
+      "bom-ref": "2d4cd691-2c41-4ae1-bf45-57f8e20f51cf"
+    },
+    {
+      "type": "library",
+      "name": "lcms2",
+      "version": "2.9-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/lcms2/2.9-r1",
+      "bom-ref": "98e54d80-c96b-4528-84ff-953379c53c68"
+    },
+    {
+      "type": "library",
+      "name": "pcsc-lite-libs",
+      "version": "1.8.24-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/pcsc-lite-libs/1.8.24-r1",
+      "bom-ref": "e72db7eb-f7bf-4376-8f3c-324fc5881213"
+    },
+    {
+      "type": "library",
+      "name": "lksctp-tools",
+      "version": "1.0.17-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0 and GPL-2.0-or-later and LGPL-2.0 and MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/lksctp-tools/1.0.17-r0",
+      "bom-ref": "b1500ea7-0bb9-45da-9b08-eef4a66f0ac3"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8-jre-base",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8-jre-base/8.212.04-r0",
+      "bom-ref": "fc087856-591e-45e3-b6ef-3a275ff13ab0"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8-jre",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8-jre/8.212.04-r0",
+      "bom-ref": "fd229ad4-87f1-4101-b348-8e56034c6bd7"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8/8.212.04-r0",
+      "bom-ref": "cfa7c686-8835-4c67-ab75-0d518691f471"
+    },
+    {
+      "type": "library",
+      "name": "nghttp2-libs",
+      "version": "1.35.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/nghttp2-libs/1.35.1-r2",
+      "bom-ref": "0aae70f6-66c0-408c-9ba0-fddd7de1efda"
+    },
+    {
+      "type": "library",
+      "name": "libssh2",
+      "version": "1.9.0-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libssh2/1.9.0-r1",
+      "bom-ref": "9e6094cd-5337-41a0-83b5-1c3b3dbe1ecd"
+    },
+    {
+      "type": "library",
+      "name": "libcurl",
+      "version": "7.64.0-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcurl/7.64.0-r5",
+      "bom-ref": "b6a0936d-ee9a-4d74-a688-87f14004f1f8"
+    },
+    {
+      "type": "library",
+      "name": "curl",
+      "version": "7.64.0-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/curl/7.64.0-r5",
+      "bom-ref": "ffe92719-b41b-4b17-9813-75e19a12babf"
+    },
+    {
+      "type": "library",
+      "name": "musl",
+      "version": "1.1.20-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl/1.1.20-r4",
+      "bom-ref": "4d3a1c41-c7e7-4ed3-b21a-48d699c2bee6"
+    },
+    {
+      "type": "library",
+      "name": "busybox",
+      "version": "1.29.3-r10",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/busybox/1.29.3-r10",
+      "bom-ref": "1f52e383-df2b-46b1-b0bf-36f9a58ea6ff"
+    },
+    {
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.1.0-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-baselayout/3.1.0-r3",
+      "bom-ref": "77da5caf-ea02-4dc0-a730-a8813b3449f3"
+    },
+    {
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.1-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-keys/2.1-r1",
+      "bom-ref": "3c218c79-e093-4648-9d3b-b11952c370b3"
+    },
+    {
+      "type": "library",
+      "name": "libcrypto1.1",
+      "version": "1.1.1b-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcrypto1.1/1.1.1b-r1",
+      "bom-ref": "896582a8-407b-4935-ade6-b16d08e26407"
+    },
+    {
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1b-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libssl1.1/1.1.1b-r1",
+      "bom-ref": "05bce1f5-f9e1-47ca-8842-f89287945409"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates-cacert",
+      "version": "20190108-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates-cacert/20190108-r0",
+      "bom-ref": "c74f91d9-38f9-4eaf-adc3-f3aaf73f7cad"
+    },
+    {
+      "type": "library",
+      "name": "libtls-standalone",
+      "version": "2.7.4-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libtls-standalone/2.7.4-r6",
+      "bom-ref": "3b86522f-415c-4cc8-94e5-4aa325ece64e"
+    },
+    {
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.29.3-r10",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ssl_client/1.29.3-r10",
+      "bom-ref": "03ba3511-eef7-49fc-8db8-e8da500c80e5"
+    },
+    {
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.11-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "zlib"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/zlib/1.2.11-r1",
+      "bom-ref": "20f6170f-b9cf-4421-9fe4-d2087569e02f"
+    },
+    {
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.10.3-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL2"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/apk-tools/2.10.3-r1",
+      "bom-ref": "66b1798c-6afd-4cef-aaa8-9afe3ffdedbc"
+    },
+    {
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.2.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/scanelf/1.2.3-r0",
+      "bom-ref": "29067051-f754-4980-a6e7-fe69e04415a2"
+    },
+    {
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.1.20-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT BSD GPL2+"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl-utils/1.1.20-r4",
+      "bom-ref": "cc0a1071-63e8-4fe9-a139-bf92d3bcf411"
+    },
+    {
+      "type": "library",
+      "name": "libffi",
+      "version": "3.2.1-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libffi/3.2.1-r6",
+      "bom-ref": "50590b1b-7209-44f6-ac0c-734fddfe6e83"
+    },
+    {
+      "type": "library",
+      "name": "p11-kit",
+      "version": "0.23.14-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/p11-kit/0.23.14-r0",
+      "bom-ref": "fddbd84a-eaa6-4752-97cb-9b94d1c34fd0"
+    },
+    {
+      "type": "library",
+      "name": "libtasn1",
+      "version": "4.13-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0 LGPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libtasn1/4.13-r0",
+      "bom-ref": "86db690b-0115-499c-946c-7d459e1fdc38"
+    },
+    {
+      "type": "library",
+      "name": "p11-kit-trust",
+      "version": "0.23.14-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/p11-kit-trust/0.23.14-r0",
+      "bom-ref": "6f740f11-789a-445a-939c-3d847a78ae23"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20190108-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates/20190108-r0",
+      "bom-ref": "53371607-1774-449d-a610-93ba4393e827"
+    },
+    {
+      "type": "library",
+      "name": "java-cacerts",
+      "version": "1.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/java-cacerts/1.0-r0",
+      "bom-ref": "98f106ad-cd6b-440f-abc7-ba5e7ca1c28b"
+    },
+    {
+      "type": "library",
+      "name": "libgcc",
+      "version": "8.3.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL LGPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libgcc/8.3.0-r0",
+      "bom-ref": "cce3ed5f-db5b-4562-99a6-a68d329bfb79"
+    },
+    {
+      "type": "library",
+      "name": "nspr",
+      "version": "4.20-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-1.1 GPL-2.0 LGPL-2.1"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/nspr/4.20-r0",
+      "bom-ref": "5cca69f1-10c8-405f-b46b-f90d119e9170"
+    },
+    {
+      "type": "library",
+      "name": "sqlite-libs",
+      "version": "3.26.0-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Public-Domain"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/sqlite-libs/3.26.0-r3",
+      "bom-ref": "c8494695-c008-409b-b2f9-46c9dc2bcb18"
+    },
+    {
+      "type": "library",
+      "name": "libstdc++",
+      "version": "8.3.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL LGPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libstdc%2B%2B/8.3.0-r0",
+      "bom-ref": "3ef0314d-ad0d-4d5d-a6bd-be8c7d4dd9e2"
+    },
+    {
+      "type": "library",
+      "name": "nss",
+      "version": "3.41-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL GPL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/nss/3.41-r0",
+      "bom-ref": "e8d22b3c-bfea-42c7-baa8-a55fecc6dee3"
+    },
+    {
+      "type": "library",
+      "name": "libxau",
+      "version": "1.0.8-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxau/1.0.8-r3",
+      "bom-ref": "ba3f6aa2-8772-463f-8d2b-f4997172dcce"
+    },
+    {
+      "type": "library",
+      "name": "libbsd",
+      "version": "0.8.6-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libbsd/0.8.6-r2",
+      "bom-ref": "f58251ef-1a18-47fc-92b2-05095ddeab06"
+    },
+    {
+      "type": "library",
+      "name": "libxdmcp",
+      "version": "1.1.2-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxdmcp/1.1.2-r5",
+      "bom-ref": "6c01c4a7-dce6-4d8f-a48a-62e1ab8fdf5d"
+    },
+    {
+      "type": "library",
+      "name": "libxcb",
+      "version": "1.13-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxcb/1.13-r2",
+      "bom-ref": "0a55d227-d2b7-4dac-afb3-5cc9421b387e"
+    },
+    {
+      "type": "library",
+      "name": "libx11",
+      "version": "1.6.7-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom:XFREE86"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libx11/1.6.7-r0",
+      "bom-ref": "4f73889a-b34f-4863-be4e-abaf919316e6"
+    },
+    {
+      "type": "library",
+      "name": "libxcomposite",
+      "version": "0.4.4-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxcomposite/0.4.4-r2",
+      "bom-ref": "c104a7ec-47d6-474c-a6ec-f51d04634343"
+    },
+    {
+      "type": "library",
+      "name": "libxext",
+      "version": "1.3.3-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxext/1.3.3-r3",
+      "bom-ref": "4d1901ac-1c98-4982-b751-924e182ec993"
+    },
+    {
+      "type": "library",
+      "name": "libxi",
+      "version": "1.7.9-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxi/1.7.9-r2",
+      "bom-ref": "e1a892ba-6b06-4db8-9ab8-eaa7917ef54e"
+    },
+    {
+      "type": "library",
+      "name": "libxrender",
+      "version": "0.9.10-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxrender/0.9.10-r3",
+      "bom-ref": "031df121-0660-43df-897a-480c62d96f42"
+    },
+    {
+      "type": "library",
+      "name": "libxtst",
+      "version": "1.2.3-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libxtst/1.2.3-r2",
+      "bom-ref": "17a7d4b8-c8eb-4cfc-8822-0fac9be11b83"
+    },
+    {
+      "type": "library",
+      "name": "alsa-lib",
+      "version": "1.1.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alsa-lib/1.1.8-r0",
+      "bom-ref": "34e3a5ac-3928-47c3-bd9e-65d1e7810c48"
+    },
+    {
+      "type": "library",
+      "name": "libbz2",
+      "version": "1.0.6-r6",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libbz2/1.0.6-r6",
+      "bom-ref": "c48d615b-1286-4782-be96-dc643f6af258"
+    },
+    {
+      "type": "library",
+      "name": "libpng",
+      "version": "1.6.37-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Libpng"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libpng/1.6.37-r0",
+      "bom-ref": "ff398022-d6b6-4fd4-9bed-cc0909de0ce2"
+    },
+    {
+      "type": "library",
+      "name": "freetype",
+      "version": "2.9.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "FTL GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/freetype/2.9.1-r2",
+      "bom-ref": "0d36b801-ac05-4026-952c-1911857a3b8a"
+    },
+    {
+      "type": "library",
+      "name": "giflib",
+      "version": "5.1.4-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/giflib/5.1.4-r2",
+      "bom-ref": "b548e1df-4309-4819-bd68-9ba43999aa07"
+    },
+    {
+      "type": "library",
+      "name": "libjpeg-turbo",
+      "version": "1.5.3-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "IJG"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libjpeg-turbo/1.5.3-r4",
+      "bom-ref": "1438721f-1b9e-4933-98d0-baeede20e6ba"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8-jre-lib",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8-jre-lib/8.212.04-r0",
+      "bom-ref": "eb2cea44-0226-4787-bcfb-53e661a19897"
+    },
+    {
+      "type": "library",
+      "name": "java-common",
+      "version": "0.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/java-common/0.1-r0",
+      "bom-ref": "a0abdfdf-85f1-4ee7-bf9a-463c31369788"
+    },
+    {
+      "type": "library",
+      "name": "krb5-conf",
+      "version": "1.0-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/krb5-conf/1.0-r1",
+      "bom-ref": "95eae5cb-60e6-4bdd-88ea-4831f65b09f5"
+    },
+    {
+      "type": "library",
+      "name": "libcom_err",
+      "version": "1.44.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later LGPL-2.0 BSD-3-Clause MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcom_err/1.44.5-r0",
+      "bom-ref": "bc910dff-1801-4c5e-ac09-df088bab11d8"
+    },
+    {
+      "type": "library",
+      "name": "keyutils-libs",
+      "version": "1.6-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later LGPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/keyutils-libs/1.6-r0",
+      "bom-ref": "276bad0f-70cf-4318-9333-e6cf2290d433"
+    },
+    {
+      "type": "library",
+      "name": "libverto",
+      "version": "0.3.0-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libverto/0.3.0-r1",
+      "bom-ref": "6968ef27-dcf4-454a-a615-2b732ca2c7c6"
+    },
+    {
+      "type": "library",
+      "name": "krb5-libs",
+      "version": "1.15.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/krb5-libs/1.15.5-r0",
+      "bom-ref": "adbc1e2d-df84-4928-b2c1-04bafc3e7e17"
+    },
+    {
+      "type": "library",
+      "name": "lcms2",
+      "version": "2.9-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/lcms2/2.9-r1",
+      "bom-ref": "6833c451-cd5c-4e29-a7f1-4bfa20521f68"
+    },
+    {
+      "type": "library",
+      "name": "pcsc-lite-libs",
+      "version": "1.8.24-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/pcsc-lite-libs/1.8.24-r1",
+      "bom-ref": "c281fcb3-05da-439d-a539-e276aabb5804"
+    },
+    {
+      "type": "library",
+      "name": "lksctp-tools",
+      "version": "1.0.17-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0 and GPL-2.0-or-later and LGPL-2.0 and MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/lksctp-tools/1.0.17-r0",
+      "bom-ref": "d1b2fd7f-f5b0-40fd-a497-ab872160ba44"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8-jre-base",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8-jre-base/8.212.04-r0",
+      "bom-ref": "6e27b528-c58d-4497-950e-e85bffcd218e"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8-jre",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8-jre/8.212.04-r0",
+      "bom-ref": "1e5c2ad9-ca42-457a-b28b-811c6f593b96"
+    },
+    {
+      "type": "library",
+      "name": "openjdk8",
+      "version": "8.212.04-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "custom"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/openjdk8/8.212.04-r0",
+      "bom-ref": "21e1e001-4584-4cf0-8aba-975a3c6c426f"
+    },
+    {
+      "type": "library",
+      "name": "nghttp2-libs",
+      "version": "1.35.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/nghttp2-libs/1.35.1-r2",
+      "bom-ref": "045c9da2-fa60-4cae-8a67-bb8793cba900"
+    },
+    {
+      "type": "library",
+      "name": "libssh2",
+      "version": "1.9.0-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libssh2/1.9.0-r1",
+      "bom-ref": "20a8eb9e-4af0-4b35-9119-82c8da2c9e51"
+    },
+    {
+      "type": "library",
+      "name": "libcurl",
+      "version": "7.64.0-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcurl/7.64.0-r5",
+      "bom-ref": "0b012420-d5d0-45b4-b7ec-db6a9fec7d5b"
+    },
+    {
+      "type": "library",
+      "name": "curl",
+      "version": "7.64.0-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/curl/7.64.0-r5",
+      "bom-ref": "897107e3-6763-4323-b344-617980d88010"
+    }
+  ]
+}
