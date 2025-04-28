@@ -1,0 +1,336 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:7f4a4c53-c6d2-46a9-bc5e-65ad2bd21df0",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-04-28T13:18:31Z",
+    "tools": [
+      {
+        "vendor": "Tern Tools",
+        "name": "Tern",
+        "version": "6b7da786383eee7aac02666c0f71c24491d76b16"
+      }
+    ],
+    "component": {
+      "type": "container",
+      "name": "opsmx11/k8s-decoder",
+      "version": "sha256:fec086394aa9a2f6e7cc3828ed1d12b5c3a016abac89a3e1b10513c7f00ab959",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fec086394aa9a2f6e7cc3828ed1d12b5c3a016abac89a3e1b10513c7f00ab959"
+        }
+      ],
+      "purl": "pkg:docker/opsmx11/k8s-decoder@sha256:fec086394aa9a2f6e7cc3828ed1d12b5c3a016abac89a3e1b10513c7f00ab959",
+      "properties": [
+        {
+          "name": "tern:repotag",
+          "value": "opsmx11/k8s-decoder:hal"
+        },
+        {
+          "name": "tern:os_guess",
+          "value": "Alpine Linux v3.13"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "musl",
+      "version": "1.2.2-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl/1.2.2-r0",
+      "bom-ref": "pkg:alpine/musl/1.2.2-r0?package-id=a2d943c28d4140e2"
+    },
+    {
+      "type": "library",
+      "name": "busybox",
+      "version": "1.32.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/busybox/1.32.1-r2",
+      "bom-ref": "pkg:alpine/busybox/1.32.1-r2?package-id=d14acb34b3764a36"
+    },
+    {
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.2.0-r8",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-baselayout/3.2.0-r8",
+      "bom-ref": "pkg:alpine/alpine-baselayout/3.2.0-r8?package-id=9b77cbb6c7a5468f"
+    },
+    {
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.2-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-keys/2.2-r0",
+      "bom-ref": "pkg:alpine/alpine-keys/2.2-r0?package-id=122785aa649a4b19"
+    },
+    {
+      "type": "library",
+      "name": "libcrypto1.1",
+      "version": "1.1.1i-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcrypto1.1/1.1.1i-r0",
+      "bom-ref": "pkg:alpine/libcrypto1.1/1.1.1i-r0?package-id=10f52224a8ba4a54"
+    },
+    {
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1i-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libssl1.1/1.1.1i-r0",
+      "bom-ref": "pkg:alpine/libssl1.1/1.1.1i-r0?package-id=1cd30445a29f4718"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates-bundle",
+      "version": "20191127-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 AND MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates-bundle/20191127-r5",
+      "bom-ref": "pkg:alpine/ca-certificates-bundle/20191127-r5?package-id=1a714c669c114a13"
+    },
+    {
+      "type": "library",
+      "name": "libtls-standalone",
+      "version": "2.9.1-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libtls-standalone/2.9.1-r1",
+      "bom-ref": "pkg:alpine/libtls-standalone/2.9.1-r1?package-id=7d1dd01f2e8b4b60"
+    },
+    {
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.32.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ssl_client/1.32.1-r2",
+      "bom-ref": "pkg:alpine/ssl_client/1.32.1-r2?package-id=eec2d655e95748cc"
+    },
+    {
+      "type": "library",
+      "name": "zlib",
+      "version": "1.2.11-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/zlib/1.2.11-r3",
+      "bom-ref": "pkg:alpine/zlib/1.2.11-r3?package-id=50ed5033dc5c4358"
+    },
+    {
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.12.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/apk-tools/2.12.1-r0",
+      "bom-ref": "pkg:alpine/apk-tools/2.12.1-r0?package-id=c881bcd7c4d84742"
+    },
+    {
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.2.8-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/scanelf/1.2.8-r0",
+      "bom-ref": "pkg:alpine/scanelf/1.2.8-r0?package-id=30d2fd59a1964966"
+    },
+    {
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.2.2-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT BSD GPL2+"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl-utils/1.2.2-r0",
+      "bom-ref": "pkg:alpine/musl-utils/1.2.2-r0?package-id=34a2e45dc5334502"
+    },
+    {
+      "type": "library",
+      "name": "libc-utils",
+      "version": "0.7.2-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause AND BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libc-utils/0.7.2-r3",
+      "bom-ref": "pkg:alpine/libc-utils/0.7.2-r3?package-id=057fc88be29a4c32"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20191127-r5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 AND MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates/20191127-r5",
+      "bom-ref": "pkg:alpine/ca-certificates/20191127-r5?package-id=820fa70d296a4e20"
+    },
+    {
+      "type": "library",
+      "name": "brotli-libs",
+      "version": "1.0.9-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/brotli-libs/1.0.9-r3",
+      "bom-ref": "pkg:alpine/brotli-libs/1.0.9-r3?package-id=1bc11c886b754aa9"
+    },
+    {
+      "type": "library",
+      "name": "nghttp2-libs",
+      "version": "1.42.0-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/nghttp2-libs/1.42.0-r1",
+      "bom-ref": "pkg:alpine/nghttp2-libs/1.42.0-r1?package-id=87d3b506cbe242e2"
+    },
+    {
+      "type": "library",
+      "name": "libcurl",
+      "version": "7.74.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcurl/7.74.0-r0",
+      "bom-ref": "pkg:alpine/libcurl/7.74.0-r0?package-id=e9244112355045b6"
+    },
+    {
+      "type": "library",
+      "name": "curl",
+      "version": "7.74.0-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/curl/7.74.0-r0",
+      "bom-ref": "pkg:alpine/curl/7.74.0-r0?package-id=09cfa86a47bc450e"
+    },
+    {
+      "type": "library",
+      "name": "oniguruma",
+      "version": "6.9.6-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/oniguruma/6.9.6-r0",
+      "bom-ref": "pkg:alpine/oniguruma/6.9.6-r0?package-id=91cd4499d8db483a"
+    },
+    {
+      "type": "library",
+      "name": "jq",
+      "version": "1.6-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/jq/1.6-r1",
+      "bom-ref": "pkg:alpine/jq/1.6-r1?package-id=5aeb4321825c4c48"
+    }
+  ]
+}
