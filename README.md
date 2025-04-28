@@ -1,1 +1,1 @@
-# cpp-sbom
+# How to execute the script 
