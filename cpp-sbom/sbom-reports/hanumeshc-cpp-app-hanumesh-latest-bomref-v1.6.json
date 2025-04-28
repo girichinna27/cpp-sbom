@@ -1,0 +1,910 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:64739090-11b7-459a-90fb-2bfc2a6c5d48",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-04-28T07:58:14Z",
+    "tools": [
+      {
+        "vendor": "Tern Tools",
+        "name": "Tern",
+        "version": "232674f45041f04ae062b53ac348936a28cc563b"
+      }
+    ],
+    "component": {
+      "type": "container",
+      "name": "hanumeshc/cpp-app-hanumesh",
+      "version": "sha256:945070bccbe3136300e4440834a3dc5a507603d19cb05e8f2d9bbd29152c6700",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "945070bccbe3136300e4440834a3dc5a507603d19cb05e8f2d9bbd29152c6700"
+        }
+      ],
+      "purl": "pkg:docker/hanumeshc/cpp-app-hanumesh@sha256:945070bccbe3136300e4440834a3dc5a507603d19cb05e8f2d9bbd29152c6700",
+      "properties": [
+        {
+          "name": "tern:repotag",
+          "value": "hanumeshc/cpp-app-hanumesh:latest"
+        },
+        {
+          "name": "tern:os_guess",
+          "value": "Alpine Linux v3.21"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.6.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-baselayout/3.6.8-r1",
+      "bom-ref": "pkg:alpine/alpine-baselayout/3.6.8-r1?package-id=4c25c12b430e4e78"
+    },
+    {
+      "type": "library",
+      "name": "alpine-baselayout-data",
+      "version": "3.6.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-baselayout-data/3.6.8-r1",
+      "bom-ref": "pkg:alpine/alpine-baselayout-data/3.6.8-r1?package-id=e3b3b1110f994d90"
+    },
+    {
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-keys/2.5-r0",
+      "bom-ref": "pkg:alpine/alpine-keys/2.5-r0?package-id=f16a8029679c468c"
+    },
+    {
+      "type": "library",
+      "name": "alpine-release",
+      "version": "3.21.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-release/3.21.3-r0",
+      "bom-ref": "pkg:alpine/alpine-release/3.21.3-r0?package-id=edf01204b4554f99"
+    },
+    {
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.14.6-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/apk-tools/2.14.6-r3",
+      "bom-ref": "pkg:alpine/apk-tools/2.14.6-r3?package-id=d3f0ee621f8b4985"
+    },
+    {
+      "type": "library",
+      "name": "busybox",
+      "version": "1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/busybox/1.37.0-r12",
+      "bom-ref": "pkg:alpine/busybox/1.37.0-r12?package-id=d1e0aed27ba942d6"
+    },
+    {
+      "type": "library",
+      "name": "busybox-binsh",
+      "version": "1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/busybox-binsh/1.37.0-r12",
+      "bom-ref": "pkg:alpine/busybox-binsh/1.37.0-r12?package-id=c24d6b3c8cc2451d"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates-bundle",
+      "version": "20241121-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 AND MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates-bundle/20241121-r1",
+      "bom-ref": "pkg:alpine/ca-certificates-bundle/20241121-r1?package-id=ebfbc08c8e324c6d"
+    },
+    {
+      "type": "library",
+      "name": "libcrypto3",
+      "version": "3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcrypto3/3.3.3-r0",
+      "bom-ref": "pkg:alpine/libcrypto3/3.3.3-r0?package-id=661171deff8b4377"
+    },
+    {
+      "type": "library",
+      "name": "libssl3",
+      "version": "3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libssl3/3.3.3-r0",
+      "bom-ref": "pkg:alpine/libssl3/3.3.3-r0?package-id=8f85e18ea54541b0"
+    },
+    {
+      "type": "library",
+      "name": "musl",
+      "version": "1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl/1.2.5-r9",
+      "bom-ref": "pkg:alpine/musl/1.2.5-r9?package-id=c90a88ec10f54a74"
+    },
+    {
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND BSD-2-Clause AND GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl-utils/1.2.5-r9",
+      "bom-ref": "pkg:alpine/musl-utils/1.2.5-r9?package-id=f34631cee4804be2"
+    },
+    {
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.3.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/scanelf/1.3.8-r1",
+      "bom-ref": "pkg:alpine/scanelf/1.3.8-r1?package-id=10ce3207e53b4988"
+    },
+    {
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ssl_client/1.37.0-r12",
+      "bom-ref": "pkg:alpine/ssl_client/1.37.0-r12?package-id=ad882cce26524f7b"
+    },
+    {
+      "type": "library",
+      "name": "zlib",
+      "version": "1.3.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/zlib/1.3.1-r2",
+      "bom-ref": "pkg:alpine/zlib/1.3.1-r2?package-id=d7d7e7aeb27e405e"
+    },
+    {
+      "type": "library",
+      "name": "binutils",
+      "version": "2.43.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/binutils/2.43.1-r2",
+      "bom-ref": "pkg:alpine/binutils/2.43.1-r2?package-id=381403744d7e4bb8"
+    },
+    {
+      "type": "library",
+      "name": "g++",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/g%2B%2B/14.2.0-r4",
+      "bom-ref": "pkg:alpine/g%2B%2B/14.2.0-r4?package-id=48bef461556c46af"
+    },
+    {
+      "type": "library",
+      "name": "gcc",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/gcc/14.2.0-r4",
+      "bom-ref": "pkg:alpine/gcc/14.2.0-r4?package-id=bc67eeaca62c459c"
+    },
+    {
+      "type": "library",
+      "name": "gmp",
+      "version": "6.3.0-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later OR GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/gmp/6.3.0-r2",
+      "bom-ref": "pkg:alpine/gmp/6.3.0-r2?package-id=aa25f96526364bcc"
+    },
+    {
+      "type": "library",
+      "name": "isl26",
+      "version": "0.26-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/isl26/0.26-r1",
+      "bom-ref": "pkg:alpine/isl26/0.26-r1?package-id=469ec3008e1e4318"
+    },
+    {
+      "type": "library",
+      "name": "jansson",
+      "version": "2.14-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/jansson/2.14-r4",
+      "bom-ref": "pkg:alpine/jansson/2.14-r4?package-id=f3f59df127ed4f4a"
+    },
+    {
+      "type": "library",
+      "name": "libatomic",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libatomic/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libatomic/14.2.0-r4?package-id=d3500b72782f4b5e"
+    },
+    {
+      "type": "library",
+      "name": "libgcc",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libgcc/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libgcc/14.2.0-r4?package-id=0de49c15919748f3"
+    },
+    {
+      "type": "library",
+      "name": "libgomp",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libgomp/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libgomp/14.2.0-r4?package-id=f8f0d12d0da54bd3"
+    },
+    {
+      "type": "library",
+      "name": "libstdc++",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libstdc%2B%2B/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libstdc%2B%2B/14.2.0-r4?package-id=4070080ac8b649dc"
+    },
+    {
+      "type": "library",
+      "name": "libstdc++-dev",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libstdc%2B%2B-dev/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libstdc%2B%2B-dev/14.2.0-r4?package-id=c99abb8be41141b8"
+    },
+    {
+      "type": "library",
+      "name": "make",
+      "version": "4.4.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/make/4.4.1-r2",
+      "bom-ref": "pkg:alpine/make/4.4.1-r2?package-id=7caa89f234c4458a"
+    },
+    {
+      "type": "library",
+      "name": "mpc1",
+      "version": "1.3.1-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/mpc1/1.3.1-r1",
+      "bom-ref": "pkg:alpine/mpc1/1.3.1-r1?package-id=955b85c2bfed47b4"
+    },
+    {
+      "type": "library",
+      "name": "mpfr4",
+      "version": "4.2.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/mpfr4/4.2.1-r0",
+      "bom-ref": "pkg:alpine/mpfr4/4.2.1-r0?package-id=8bc0c96e9e694406"
+    },
+    {
+      "type": "library",
+      "name": "musl-dev",
+      "version": "1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl-dev/1.2.5-r9",
+      "bom-ref": "pkg:alpine/musl-dev/1.2.5-r9?package-id=594d6d1d363446d5"
+    },
+    {
+      "type": "library",
+      "name": "zstd-libs",
+      "version": "1.5.6-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause OR GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/zstd-libs/1.5.6-r2",
+      "bom-ref": "pkg:alpine/zstd-libs/1.5.6-r2?package-id=9b17b22ddb724ad0"
+    },
+    {
+      "type": "library",
+      "name": "alpine-baselayout",
+      "version": "3.6.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-baselayout/3.6.8-r1",
+      "bom-ref": "pkg:alpine/alpine-baselayout/3.6.8-r1?package-id=fe8a8b10b70143cb"
+    },
+    {
+      "type": "library",
+      "name": "alpine-baselayout-data",
+      "version": "3.6.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-baselayout-data/3.6.8-r1",
+      "bom-ref": "pkg:alpine/alpine-baselayout-data/3.6.8-r1?package-id=a9ed198bffc94077"
+    },
+    {
+      "type": "library",
+      "name": "alpine-keys",
+      "version": "2.5-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-keys/2.5-r0",
+      "bom-ref": "pkg:alpine/alpine-keys/2.5-r0?package-id=2d34bf2b6a484555"
+    },
+    {
+      "type": "library",
+      "name": "alpine-release",
+      "version": "3.21.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/alpine-release/3.21.3-r0",
+      "bom-ref": "pkg:alpine/alpine-release/3.21.3-r0?package-id=b1fb189654384a38"
+    },
+    {
+      "type": "library",
+      "name": "apk-tools",
+      "version": "2.14.6-r3",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/apk-tools/2.14.6-r3",
+      "bom-ref": "pkg:alpine/apk-tools/2.14.6-r3?package-id=bb8187dde8a5416a"
+    },
+    {
+      "type": "library",
+      "name": "binutils",
+      "version": "2.43.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/binutils/2.43.1-r2",
+      "bom-ref": "pkg:alpine/binutils/2.43.1-r2?package-id=30f47be9a7b34989"
+    },
+    {
+      "type": "library",
+      "name": "busybox",
+      "version": "1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/busybox/1.37.0-r12",
+      "bom-ref": "pkg:alpine/busybox/1.37.0-r12?package-id=57b16d1b26884b7a"
+    },
+    {
+      "type": "library",
+      "name": "busybox-binsh",
+      "version": "1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/busybox-binsh/1.37.0-r12",
+      "bom-ref": "pkg:alpine/busybox-binsh/1.37.0-r12?package-id=139a38ac44aa4946"
+    },
+    {
+      "type": "library",
+      "name": "ca-certificates-bundle",
+      "version": "20241121-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0 AND MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ca-certificates-bundle/20241121-r1",
+      "bom-ref": "pkg:alpine/ca-certificates-bundle/20241121-r1?package-id=5879eb59d8074bef"
+    },
+    {
+      "type": "library",
+      "name": "g++",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/g%2B%2B/14.2.0-r4",
+      "bom-ref": "pkg:alpine/g%2B%2B/14.2.0-r4?package-id=5917aab566fe428b"
+    },
+    {
+      "type": "library",
+      "name": "gcc",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/gcc/14.2.0-r4",
+      "bom-ref": "pkg:alpine/gcc/14.2.0-r4?package-id=ac3d1fe87f054598"
+    },
+    {
+      "type": "library",
+      "name": "gmp",
+      "version": "6.3.0-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later OR GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/gmp/6.3.0-r2",
+      "bom-ref": "pkg:alpine/gmp/6.3.0-r2?package-id=584f125f81be4596"
+    },
+    {
+      "type": "library",
+      "name": "isl26",
+      "version": "0.26-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/isl26/0.26-r1",
+      "bom-ref": "pkg:alpine/isl26/0.26-r1?package-id=8bf2950024834291"
+    },
+    {
+      "type": "library",
+      "name": "jansson",
+      "version": "2.14-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/jansson/2.14-r4",
+      "bom-ref": "pkg:alpine/jansson/2.14-r4?package-id=dacd470a12b74888"
+    },
+    {
+      "type": "library",
+      "name": "libatomic",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libatomic/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libatomic/14.2.0-r4?package-id=18cc8b2e3cef40bc"
+    },
+    {
+      "type": "library",
+      "name": "libcrypto3",
+      "version": "3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libcrypto3/3.3.3-r0",
+      "bom-ref": "pkg:alpine/libcrypto3/3.3.3-r0?package-id=59878064580e449c"
+    },
+    {
+      "type": "library",
+      "name": "libgcc",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libgcc/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libgcc/14.2.0-r4?package-id=669d9cd1df324b83"
+    },
+    {
+      "type": "library",
+      "name": "libgomp",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libgomp/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libgomp/14.2.0-r4?package-id=c83537c2adcb42da"
+    },
+    {
+      "type": "library",
+      "name": "libssl3",
+      "version": "3.3.3-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libssl3/3.3.3-r0",
+      "bom-ref": "pkg:alpine/libssl3/3.3.3-r0?package-id=8409f882d4d94eb8"
+    },
+    {
+      "type": "library",
+      "name": "libstdc++",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libstdc%2B%2B/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libstdc%2B%2B/14.2.0-r4?package-id=36e2ddd815304fe8"
+    },
+    {
+      "type": "library",
+      "name": "libstdc++-dev",
+      "version": "14.2.0-r4",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later AND LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/libstdc%2B%2B-dev/14.2.0-r4",
+      "bom-ref": "pkg:alpine/libstdc%2B%2B-dev/14.2.0-r4?package-id=4d9fbf6df0574d3e"
+    },
+    {
+      "type": "library",
+      "name": "make",
+      "version": "4.4.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/make/4.4.1-r2",
+      "bom-ref": "pkg:alpine/make/4.4.1-r2?package-id=be35515373b74b46"
+    },
+    {
+      "type": "library",
+      "name": "mpc1",
+      "version": "1.3.1-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/mpc1/1.3.1-r1",
+      "bom-ref": "pkg:alpine/mpc1/1.3.1-r1?package-id=0e196fcbd570404b"
+    },
+    {
+      "type": "library",
+      "name": "mpfr4",
+      "version": "4.2.1-r0",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-3.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/mpfr4/4.2.1-r0",
+      "bom-ref": "pkg:alpine/mpfr4/4.2.1-r0?package-id=708c97061afd40aa"
+    },
+    {
+      "type": "library",
+      "name": "musl",
+      "version": "1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl/1.2.5-r9",
+      "bom-ref": "pkg:alpine/musl/1.2.5-r9?package-id=a24a92f524b740ff"
+    },
+    {
+      "type": "library",
+      "name": "musl-dev",
+      "version": "1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl-dev/1.2.5-r9",
+      "bom-ref": "pkg:alpine/musl-dev/1.2.5-r9?package-id=3f39e27bdc7248f0"
+    },
+    {
+      "type": "library",
+      "name": "musl-utils",
+      "version": "1.2.5-r9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT AND BSD-2-Clause AND GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/musl-utils/1.2.5-r9",
+      "bom-ref": "pkg:alpine/musl-utils/1.2.5-r9?package-id=8a4ccc605c224c3f"
+    },
+    {
+      "type": "library",
+      "name": "scanelf",
+      "version": "1.3.8-r1",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/scanelf/1.3.8-r1",
+      "bom-ref": "pkg:alpine/scanelf/1.3.8-r1?package-id=e53e1080837b43ea"
+    },
+    {
+      "type": "library",
+      "name": "ssl_client",
+      "version": "1.37.0-r12",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/ssl_client/1.37.0-r12",
+      "bom-ref": "pkg:alpine/ssl_client/1.37.0-r12?package-id=eccf932b69f24570"
+    },
+    {
+      "type": "library",
+      "name": "zlib",
+      "version": "1.3.1-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/zlib/1.3.1-r2",
+      "bom-ref": "pkg:alpine/zlib/1.3.1-r2?package-id=23a741cc6a704040"
+    },
+    {
+      "type": "library",
+      "name": "zstd-libs",
+      "version": "1.5.6-r2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause OR GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:alpine/zstd-libs/1.5.6-r2",
+      "bom-ref": "pkg:alpine/zstd-libs/1.5.6-r2?package-id=0f8ebcefa8514bd8"
+    }
+  ]
+}
