@@ -1,12 +1,78 @@
 #!/bin/bash
 
-# Usage check
-if [ $# -ne 1 ]; then
-  echo "Usage: $0 <docker_image:tag>"
-  exit 1
+#### Installing all pre-requisite utilities
+set -e
+
+echo "🔧 Starting installation of prerequisite utilities and Tern..."
+
+# Helper to validate existence
+validate_tool() {
+    local tool_name=$1
+    local version_cmd=$2
+    echo -n "🔹 Checking $tool_name... "
+    if command -v $tool_name &>/dev/null; then
+        echo "✅ FOUND - Version: $($version_cmd)"
+    else
+        echo "❌ NOT FOUND!"
+    fi
+}
+
+echo "📦 Updating system packages and installing dependencies..."
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv pipx git jq uuid-runtime skopeo attr gcc python3-dev libffi-dev libssl-dev make curl
+
+# Ensure pipx path is active
+pipx ensurepath
+export PATH="$HOME/.local/bin:$PATH"
+
+# Validate common tools
+validate_tool python3 "python3 --version"
+validate_tool pip3 "pip3 --version"
+validate_tool pipx "pipx --version"
+validate_tool jq "jq --version"
+validate_tool skopeo "skopeo --version"
+validate_tool getfattr "getfattr --version"
+
+# Install cyclonedx-cli 
+if ! command -v cyclonedx &>/dev/null; then
+    echo "⬇️ Installing CycloneDX CLI..."
+    curl -LO https://github.com/CycloneDX/cyclonedx-cli/releases/download/v0.27.2/cyclonedx-linux-x64
+    chmod +x cyclonedx-linux-x64
+    sudo mv cyclonedx-linux-x64 /usr/local/bin/cyclonedx
+fi
+validate_tool cyclonedx "cyclonedx --version"
+
+# Install Tern via virtualenv (since pipx method failed earlier)
+if [ ! -d "$HOME/.tern-venv" ]; then
+    echo "🐍 Creating Python virtual environment for Tern..."
+    python3 -m venv ~/.tern-venv
+fi
+source ~/.tern-venv/bin/activate
+
+if [ ! -d "$HOME/tern" ]; then
+    echo "📥 Cloning Tern from GitHub..."
+    git clone https://github.com/tern-tools/tern.git ~/tern
 fi
 
-image_name="$1"
+cd ~/tern
+echo "📦 Installing Python dependencies for Tern..."
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+
+echo "🔧 Installing Tern..."
+python3 setup.py install
+
+# Ensure fs_hash.sh is executable
+chmod +x ~/.tern-venv/lib/python*/site-packages/tern/tools/fs_hash.sh
+
+validate_tool tern "tern --version"
+
+echo ""
+echo "✅ All utilities and Tern installed successfully!"
+
+##### Generate the SBOM, fix all the format issues like: adding schema, change the spec version to 1.6, add bom reference for each component elements, change type from application to library etc etc
+image_name="${DOCKER_IMAGE}:${TAG}"
+echo $image_name
 image_base=$(echo "$image_name" | tr '/:' '-')
 sbom_file="${image_base}.json"
 base_name="${image_base}"
@@ -94,13 +160,15 @@ echo "  • Added $bomref_added missing \"bom-ref\" fields"
 # -------------------------------------------
 
 REPO_NAME="cpp-sbom"
-REPO_URL="git@github.com:girichinna27/cpp-sbom.git"
+###REPO_URL="git@github.com:girichinna27/cpp-sbom.git"
+REPO_URL="https://${GITHUB_TOKEN}@github.com/girichinna27/cpp-sbom.git"
 LOCAL_REPO="$ROOT_DIR/$REPO_NAME"
 
 # 1. Check if repo folder exists
 if [ ! -d "$LOCAL_REPO/.git" ]; then
   echo "🔄 Cloning repo $REPO_URL..."
   git clone "$REPO_URL" "$LOCAL_REPO"
+  ####git clone "https://${GITHUB_TOKEN}@github.com/girichinna27/cpp-sbom.git" "$LOCAL_REPO"
 else
   echo "📂 Repo exists. Pulling latest changes..."
   cd "$LOCAL_REPO"
@@ -121,7 +189,8 @@ cp "$output_file" "$LOCAL_REPO/sbom-reports/"
 cd "$LOCAL_REPO"
 git add "sbom-reports/$output_file"
 git commit -m "Add SBOM report for $image_name"
+git remote set-url origin "https://${GITHUB_TOKEN}@github.com/girichinna27/cpp-sbom.git"
 git push
 
 echo "🎉 Successfully pushed $output_file to GitHub repo under sbom-reports/"
-
+echo "output_file=$output_file" > /tmp/output_file.env
