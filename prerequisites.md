@@ -61,6 +61,55 @@ Installing tern script to /var/lib/jenkins/.tern-venv/bin
 
 ---
 
+## ✅ Access for Private Docker Images
+
+If you are scanning **private Docker images**, authentication must be configured to allow `skopeo` and `tern` to pull images.
+
+### Steps:
+
+1. Create the Docker `config.json` file with encoded credentials in jenkins machine:
+
+```bash
+echo -n 'your-username:your-password' | base64
+```
+
+2. Use the base64 output in the following format:
+
+```json
+{
+  "auths": {
+    "https://index.docker.io/v1/": {
+      "auth": "<base64-encoded-credentials>"
+    }
+  }
+}
+```
+
+3. Save this file to:
+
+```bash
+/var/lib/jenkins/.docker/config.json
+```
+
+4. Set proper permissions:
+
+```bash
+sudo chown jenkins:jenkins /var/lib/jenkins/.docker/config.json
+chmod 600 /var/lib/jenkins/.docker/config.json
+```
+
+5. Export the path in the Jenkins job script - Make sure to add this export statement before running: "tern report -----" command:
+
+```bash
+export REGISTRY_AUTH_FILE=/var/lib/jenkins/.docker/config.json
+```
+
+---
+
+This ensures that private Docker images can be scanned and SBOMs can be generated and submitted to SSD successfully.
+
+---
+
 ## 📂 References
 
 - [Tern Documentation](https://github.com/tern-tools/tern)
